@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Home = ({ handleSubmit }) => {
+const LoginTwo = () => {
   return (
     <div>
       <div className="wrapper-page">
         <div className="card overflow-hidden account-card mx-3">
           <div className="bg-primary p-4 text-white text-center position-relative">
-            <h4 className="font-20 m-b-5">Welcome Back !</h4>
-            <p className="text-white-50 mb-4">
+            <h4 className="font-20 m-b-5">Request Password Reset</h4>
+            {/* <p className="text-white-50 mb-4">
               Sign in to continue to Fleet Manager.
-            </p>
+            </p> */}
             <a href="index.html" className="logo logo-admin">
               <img src="assets/images/logo-sm.png" height="24" alt="logo" />
             </a>
@@ -46,21 +46,20 @@ const Home = ({ handleSubmit }) => {
                       className="custom-control-input"
                       id="customControlInline"
                     />{" "}
-                    <label
+                    {/* <label
                       className="custom-control-label"
                       htmlFor="customControlInline"
                     >
                       Remember me
-                    </label>
+                    </label> */}
                   </div>
                 </div>
                 <div className="col-sm-6 text-right">
                   <button
                     className="btn btn-primary w-md waves-effect waves-light"
                     type="submit"
-                    onClick={handleSubmit}
                   >
-                    Log In
+                    Reset Password
                   </button>
                 </div>
               </div>
@@ -68,10 +67,10 @@ const Home = ({ handleSubmit }) => {
                 <div className="col-12 m-t-20">
 
                   
-                  <NavLink to="/forgotpassword" className="mdi mdi-lock">
+                  {/* <NavLink to="/forgotpassword" className="mdi mdi-lock">
                     Forgot your password?
                   </NavLink>
-
+ */}
 
                 </div>
               </div>
@@ -79,12 +78,12 @@ const Home = ({ handleSubmit }) => {
           </div>
         </div>
         <div className="m-t-40 text-center">
-          <p>
+          {/* <p>
             Don't have an account ?{" "}
             <NavLink to="/register" className="font-500 text-primary">
               Signup now
             </NavLink>
-          </p>
+          </p> */}
 
           <NavLink to="/login" className="font-500 text-primary">
            </NavLink>
@@ -97,4 +96,4 @@ const Home = ({ handleSubmit }) => {
     </div>
   );
 };
-export default Home;
+export default LoginTwo;
