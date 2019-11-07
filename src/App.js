@@ -7,6 +7,7 @@ import SideBar from "./containers/commons/SideBar";
 import TopNav from "./containers/commons/TopNav";
 import ForgotPassword from "./containers/forgotPassword/ForgotPassword";
 import CreateVehicle from "./containers/vehicles/CreateVehicle";
+import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 
 class App extends Component {
   render() {
@@ -20,6 +21,11 @@ class App extends Component {
             <Route path="/register" exact component={Registration} />
             <Route path="/forgotpassword" exact component={ForgotPassword} />
             <Route path="/createvehicle" exact component={CreateVehicle} />
+            <Route
+              path="/createvehicledefects"
+              exact
+              component={AddVehicleDefects}
+            />
           </Switch>
         </Router>
       </div>
