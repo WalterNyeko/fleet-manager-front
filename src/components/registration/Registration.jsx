@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Home = ({ handleSubmit }) => {
+const Register = ({ handleSubmit }) => {
   return (
     <div>
       <div className="wrapper-page">
         <div className="card overflow-hidden account-card mx-3">
           <div className="bg-primary p-4 text-white text-center position-relative">
-            <h4 className="font-20 m-b-5">Welcome Back !</h4>
+            <h4 className="font-20 m-b-5">Free Register</h4>
             <p className="text-white-50 mb-4">
-              Sign in to continue to Fleet Manager.
+              Get your free Veltrix account now.
             </p>
             <a href="index.html" className="logo logo-admin">
               <img src="assets/images/logo-sm.png" height="24" alt="logo" />
@@ -20,6 +20,15 @@ const Home = ({ handleSubmit }) => {
               className="form-horizontal m-t-30"
               action="https://themesbrand.com/veltrix/layouts/vertical/index.html"
             >
+              <div className="form-group">
+                <label htmlFor="useremail">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="useremail"
+                  placeholder="Enter email"
+                />
+              </div>
               <div className="form-group">
                 <label htmlFor="username">Username</label>
                 <input
@@ -39,36 +48,24 @@ const Home = ({ handleSubmit }) => {
                 />
               </div>
               <div className="form-group row m-t-20">
-                <div className="col-sm-6">
-                  <div className="custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      id="customControlInline"
-                    />{" "}
-                    <label
-                      className="custom-control-label"
-                      htmlFor="customControlInline"
-                    >
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-                <div className="col-sm-6 text-right">
+                <div className="col-12 text-right">
                   <button
                     className="btn btn-primary w-md waves-effect waves-light"
                     type="submit"
                     onClick={handleSubmit}
                   >
-                    Log In
+                    Register
                   </button>
                 </div>
               </div>
               <div className="form-group m-t-10 mb-0 row">
                 <div className="col-12 m-t-20">
-                  <a href="pages-recoverpw.html">
-                    <i className="mdi mdi-lock"></i> Forgot your password?
-                  </a>
+                  <p className="mb-0">
+                    By registering you agree to the Veltrix
+                    <NavLink to="#" className="text-primary">
+                      Terms of Use
+                    </NavLink>
+                  </p>
                 </div>
               </div>
             </form>
@@ -76,9 +73,9 @@ const Home = ({ handleSubmit }) => {
         </div>
         <div className="m-t-40 text-center">
           <p>
-            Don't have an account ?{" "}
-            <NavLink to="/register" className="font-500 text-primary">
-              Signup now
+            Already have an account ?
+            <NavLink to="/" className="font-500 text-primary">
+              Login
             </NavLink>
           </p>
           <p>
@@ -90,4 +87,5 @@ const Home = ({ handleSubmit }) => {
     </div>
   );
 };
-export default Home;
+
+export default Register;

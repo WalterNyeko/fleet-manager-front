@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
-import LoginPage from "../../components/auth/Login";
+import Register from "../../components/registration/Registration";
 import history from "../configs/history";
 
-class Login extends Component {
+export default class Registration extends Component {
   handleSubmit = e => {
     e.preventDefault();
     history.push("/home");
@@ -10,9 +10,8 @@ class Login extends Component {
   render() {
     return (
       <Fragment>
-        <LoginPage handleSubmit={this.handleSubmit} />
+        <Register handleSubmit={this.handleSubmit} />
       </Fragment>
     );
   }
 }
-export default Login;
