@@ -12,6 +12,7 @@ import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
 import CreatePullCar from "./containers/pullcar/CreatePullCar";
 import CreateStockRecord from "./containers/stock/CreateStockRecord";
+import CreateMaintenanceRecord from "./containers/maintenance/CreateMaintenanceIncuredRecord";
 
 class App extends Component {
   render() {
@@ -40,6 +41,8 @@ class App extends Component {
               exact
               component={CreatePullCar}
             />
+          
+            <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
             <Route
               path="/createvehicledefects"
               exact
