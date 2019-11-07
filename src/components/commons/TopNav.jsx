@@ -209,7 +209,9 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/createinvoice">
                   New Invoice
                 </NavLink>
-                {/* <div className="dropdown-divider"></div> */}
+                <NavLink className="dropdown-item" to="/createvehicletyres">
+                  New Tyres
+                </NavLink>
                 <NavLink className="dropdown-item" to="/createveichlehire">
                   New Vehicle Hire
                 </NavLink>
