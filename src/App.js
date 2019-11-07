@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router";
@@ -23,6 +24,27 @@ class App extends Component {
       </div>
     );
   }
+=======
+import React from "react"; 
+import { BrowserRouter, Route, Switch} from "react-router-dom"
+import PasswordReset from "./containers/forgotpassword/ForgotPassword";
+import Login from "./components/auth/Login";
+
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Login} />
+          <Route path="/register" exact component={Login} />
+          <Route path="/forgotpassword" exact component={PasswordReset}/> 
+        </Switch>
+      </BrowserRouter>
+      
+    </div>
+  );
+>>>>>>> added forgotpassword page
 }
 
 export default App;

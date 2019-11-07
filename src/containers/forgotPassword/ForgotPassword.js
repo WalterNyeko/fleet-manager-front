@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import ResetPassword from "../../components/forgotPassword/ForgotPassword";
+import ResetPassword from "../../components/forgotpassword/ForgotPassword";
 
 class PasswordSetting extends Component {
   
