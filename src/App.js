@@ -41,6 +41,7 @@ class App extends Component {
               exact
               component={CreatePullCar}
             />
+          
             <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
             <Route
               path="/createvehicledefects"
