@@ -22,7 +22,7 @@ const PasswordReset = () =>{
                                 </div></div>
                                 </form>
                                 </div></div><div class="m-t-40 text-center"><p>Remember It ? 
-                                <NavLink to="/login" className="font-500 text-primary">
+                                <NavLink to="/" className="font-500 text-primary">
                                 Sign In here
                             </NavLink>
 
