@@ -210,9 +210,9 @@ export default function TopNav() {
                   New Accident Record
                 </a>
                 {/* <div className="dropdown-divider"></div> */}
-                <a className="dropdown-item" href="/home">
+                <NavLink className="dropdown-item" to="/createveichlehire">
                   New Vehicle Hire
-                </a>
+                </NavLink>
                 <a className="dropdown-item" href="/home">
                   New Fuel Expense Record
                 </a>
