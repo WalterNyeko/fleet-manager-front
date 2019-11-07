@@ -213,9 +213,9 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/createveichlehire">
                   New Vehicle Hire
                 </NavLink>
-                <a className="dropdown-item" href="/home">
+                <NavLink className="dropdown-item" to="/createfuelexpense">
                   New Fuel Expense Record
-                </a>
+                </NavLink>
               </div>
             </div>
           </li>
