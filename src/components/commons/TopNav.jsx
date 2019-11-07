@@ -194,15 +194,15 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/createcostingincured">
                   New Costing Incurred
                 </NavLink>
-                <a className="dropdown-item" href="/home">
+                <NavLink className="dropdown-item" to="/createmaintenacerecord">
                   New Maintenance Record
-                </a>
-                <a className="dropdown-item" href="/home">
+                </NavLink>
+                <NavLink className="dropdown-item" to="/createpullcarincidence">
                   New Pullcar Incidence
-                </a>
-                <a className="dropdown-item" href="/home">
+                </NavLink>
+                <NavLink className="dropdown-item" to="/createstockrecord">
                   New Stock Record
-                </a>
+                </NavLink>
                 <a className="dropdown-item" href="/home">
                   New Accident Record
                 </a>
