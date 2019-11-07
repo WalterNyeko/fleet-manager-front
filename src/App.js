@@ -10,6 +10,7 @@ import CreateVehicle from "./containers/vehicles/CreateVehicle";
 import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
+import VehicleAsset from "./containers/vehicleAsset/VehicleAsset"
 import CreatePullCar from "./containers/pullcar/CreatePullCar";
 import CreateStockRecord from "./containers/stock/CreateStockRecord";
 import CreateMaintenanceRecord from "./containers/maintenance/CreateMaintenanceIncuredRecord";
@@ -48,6 +49,7 @@ class App extends Component {
               exact
               component={AddVehicleDefects}
             />
+            <Route path="/createvehicleasset" exact component={VehicleAsset}/>
             <Route
               path="/createstockrecord"
               exact
