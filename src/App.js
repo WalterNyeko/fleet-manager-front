@@ -4,7 +4,6 @@ import { Route } from "react-router";
 import Login from "./containers/auth/Login";
 import PasswordReset from "./containers/forgotPassword/ForgotPassword";
 import Home from "./components/auth/Login";
-import LoginTwo from "./containers/auth/Login2"
 
 
 function App() {
@@ -16,9 +15,9 @@ function App() {
           <Route path="/register" exact component={Login} />
           <Route path="/forgotpassword" exact component={PasswordReset}/> 
           <Route path="/login" exact component={Home}/>    
-          <Route path="/login2" exact component={LoginTwo}/>     
         </Switch>
       </BrowserRouter>
+      
     </div>
   );
 }
