@@ -1,0 +1,122 @@
+import React from "react";
+import "../../index.css";
+
+export default function SideBar() {
+  return (
+    <div className="left side-menu">
+      <div className="slimscroll-menu" id="remove-scroll">
+        <div id="sidebar-menu">
+          <ul className="metismenu" id="side-menu">
+            <li className="menu-title">Main</li>
+            <li>
+              <a href="index.html" className="waves-effect">
+                <i className="ti-home"></i>
+                <span className="badge badge-primary badge-pill float-right">
+                  2
+                </span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Vehicles</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Vehicles Hire</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Vehicles Off Road</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Marked Vehicle Assets</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Tyres</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Fuel</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Defects</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Accidents</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Maintenance</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Poolcar Planner</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Costings</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Purchase Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Stock</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Customer Relations</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Insurance Certificate</span>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" className="waves-effect">
+                <i className="ti-calendar"></i>
+                <span>Management Reports</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="clearfix"></div>
+      </div>
+    </div>
+  );
+}
