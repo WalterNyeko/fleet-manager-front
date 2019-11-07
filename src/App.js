@@ -9,6 +9,7 @@ import ForgotPassword from "./containers/forgotPassword/ForgotPassword";
 import CreateVehicle from "./containers/vehicles/CreateVehicle";
 import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
+import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/forgotpassword" exact component={ForgotPassword} />
             <Route path="/createvehicle" exact component={CreateVehicle} />
             <Route path="/createaccidentrecord" exact component={CreateAccidentRecord} />
+            <Route path="/createcostingincured" exact component={CreateCostingIncuredRecord} />
             <Route
               path="/createvehicledefects"
               exact
