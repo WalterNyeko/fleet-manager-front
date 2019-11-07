@@ -3,6 +3,7 @@ import LoginPage from "../../components/auth/Login";
 import history from "../configs/history";
 
 class Login extends Component {
+  
   handleSubmit = e => {
     e.preventDefault();
     history.push("/home");

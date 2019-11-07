@@ -5,7 +5,8 @@ import Login from "./containers/auth/Login";
 import Registration from "./containers/registration/Registration";
 import SideBar from "./containers/commons/SideBar";
 import TopNav from "./containers/commons/TopNav";
-import ForgotPassword from "./containers/forgotPassword/ForgotPassword"
+import ForgotPassword from "./containers/forgotPassword/ForgotPassword";
+import CreateVehicle from "./containers/vehicles/CreateVehicle";
 
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Login} />
             <Route path="/register" exact component={Registration} />
-            <Route path="/forgotpassword" exact component={ForgotPassword} />            
+            <Route path="/forgotpassword" exact component={ForgotPassword} />
+            <Route path="/createvehicle" exact component={CreateVehicle} />
           </Switch>
         </Router>
       </div>
