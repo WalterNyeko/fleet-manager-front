@@ -179,9 +179,9 @@ export default function TopNav() {
                 Create
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a className="dropdown-item" href="/home">
+                <NavLink className="dropdown-item" to="/createvehicle">
                   New Vehicle
-                </a>{" "}
+                </NavLink>{" "}
                 <a className="dropdown-item" href="/home">
                   New Defects Record
                 </a>{" "}
