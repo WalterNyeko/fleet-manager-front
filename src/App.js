@@ -10,6 +10,7 @@ import CreateVehicle from "./containers/vehicles/CreateVehicle";
 import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
+import vehicleAsset from "./containers/vehicleAsset/VehicleAsset"
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
               exact
               component={AddVehicleDefects}
             />
+            <Route path="/createvehicleasset" exact component={ vehicleAsset}/>
           </Switch>
         </Router>
       </div>
