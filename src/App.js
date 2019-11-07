@@ -11,6 +11,7 @@ import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
 import CreatePullCar from "./containers/pullcar/CreatePullCar";
+import CreateStockRecord from "./containers/stock/CreateStockRecord";
 
 class App extends Component {
   render() {
@@ -43,6 +44,11 @@ class App extends Component {
               path="/createvehicledefects"
               exact
               component={AddVehicleDefects}
+            />
+            <Route
+              path="/createstockrecord"
+              exact
+              component={CreateStockRecord}
             />
           </Switch>
         </Router>
