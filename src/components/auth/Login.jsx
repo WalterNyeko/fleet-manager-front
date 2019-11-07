@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ handleSubmit }) => {
   return (
     <div>
       <div className="wrapper-page">
@@ -58,6 +58,7 @@ const Home = () => {
                   <button
                     className="btn btn-primary w-md waves-effect waves-light"
                     type="submit"
+                    onClick={handleSubmit}
                   >
                     Log In
                   </button>
