@@ -55,10 +55,10 @@ export default function SideBar() {
               </NavLink>
             </li>
             <li>
-              <a href="calendar.html" className="waves-effect">
+              <NavLink to="/alldefects" className="waves-effect">
                 <i className="ti-calendar"></i>
                 <span>Defects</span>
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="calendar.html" className="waves-effect">
