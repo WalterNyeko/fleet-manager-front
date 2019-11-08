@@ -18,6 +18,7 @@ import CreateVeichleHireRecord from "./containers/veichlehire/CreateVeichleHireR
 import CreateFuelExpenseRecord from "./containers/fuelExpense/CreateFuelExpenseRecord";
 import CreateInvoiceRecord from "./containers/invoice/CreateInvoiceRecord";
 import VehicleTyres from "./containers/vehicletyres/VehicleTyres"
+import AllVehicles from "./containers/vehicles/AllVeichles"
 
 class App extends Component {
   render() {
@@ -63,6 +64,8 @@ class App extends Component {
               component={CreateStockRecord}
             />
             <Route path="/createvehicletyres" exact component={VehicleTyres}/>
+
+            <Route path="/allvehicles" exact component={AllVehicles} />
           </Switch>
         </Router>
       </div>

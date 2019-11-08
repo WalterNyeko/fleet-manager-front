@@ -1,6 +1,7 @@
 .side-menu {
   overflow-y: auto !important;
 }
-.add-vehicle {
+.add-vehicle,
+.all-vehicles {
   margin-top: 80px !important;
 }

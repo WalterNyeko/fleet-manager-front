@@ -1,5 +1,6 @@
 import React from "react";
 import "../../index.css";
+import {NavLink} from "react-router-dom";
 
 export default function SideBar() {
   return (
@@ -18,10 +19,10 @@ export default function SideBar() {
               </a>
             </li>
             <li>
-              <a href="calendar.html" className="waves-effect">
+              <NavLink to="/allvehicles" className="waves-effect">
                 <i className="ti-calendar"></i>
                 <span>Vehicles</span>
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="calendar.html" className="waves-effect">
