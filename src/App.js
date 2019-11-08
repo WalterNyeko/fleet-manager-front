@@ -23,6 +23,7 @@ import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire";
 import AllVehiclesOffRoad from "./containers/vehicles/AllVeichlesOffRoad";
 import AllMarkedVehiclesAssets from "./containers/vehicles/AllVMarkedeichlesAssets";
 import AllTyres from "./containers/vehicletyres/AllTyres";
+import AllFuel from "./containers/fuelExpense/AllFuel";
 
 class App extends Component {
   render() {
@@ -52,6 +53,7 @@ class App extends Component {
             <Route path="/allveichlesoffroad" exact component={AllVehiclesOffRoad} />
             <Route path="/allmarkedveichlesassets" exact component={AllMarkedVehiclesAssets} />
             <Route path="/alltyres" exact component={AllTyres} />
+            <Route path="/allfuel" exact component={AllFuel} />
           </Switch>
         </Router>
       </div>
