@@ -21,6 +21,7 @@ import VehicleTyres from "./containers/vehicletyres/VehicleTyres";
 import AllVehicles from "./containers/vehicles/AllVeichles";
 import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire";
 import AllVehiclesOffRoad from "./containers/vehicles/AllVeichlesOffRoad";
+import AllMarkedVehiclesAssets from "./containers/vehicles/AllVMarkedeichlesAssets";
 
 class App extends Component {
   render() {
@@ -37,38 +38,18 @@ class App extends Component {
             <Route path="/createveichlehire" exact component={CreateVeichleHireRecord} />
             <Route path="/createfuelexpense" exact component={CreateFuelExpenseRecord} />
             <Route path="/createinvoice" exact component={CreateInvoiceRecord} />
-            <Route
-              path="/createaccidentrecord"
-              exact
-              component={CreateAccidentRecord}
-            />
-            <Route
-              path="/createcostingincured"
-              exact
-              component={CreateCostingIncuredRecord}
-            />
-            <Route
-              path="/createpullcarincidence"
-              exact
-              component={CreatePullCar}
-            />
-          
-            <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
-            <Route
-              path="/createvehicledefects"
-              exact
-              component={AddVehicleDefects}
-            />
+            <Route path="/createaccidentrecord" exact component={CreateAccidentRecord} />
+            <Route path="/createcostingincured" exact component={CreateCostingIncuredRecord} />
+            <Route path="/createpullcarincidence" exact component={CreatePullCar} />
+           <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
+            <Route path="/createvehicledefects" exact component={AddVehicleDefects} />
             <Route path="/createvehicleasset" exact component={VehicleAsset}/>
-            <Route
-              path="/createstockrecord"
-              exact
-              component={CreateStockRecord}
-            />
+            <Route path="/createstockrecord" exact component={CreateStockRecord} />
             <Route path="/createvehicletyres" exact component={VehicleTyres}/>
             <Route path="/allvehicles" exact component={AllVehicles} />
             <Route path="/allveichleshire" exact component={AllVehiclesHire} />
             <Route path="/allveichlesoffroad" exact component={AllVehiclesOffRoad} />
+            <Route path="/allmarkedveichlesassets" exact component={AllMarkedVehiclesAssets} />
           </Switch>
         </Router>
       </div>
