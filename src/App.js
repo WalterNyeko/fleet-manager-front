@@ -17,9 +17,10 @@ import CreateMaintenanceRecord from "./containers/maintenance/CreateMaintenanceI
 import CreateVeichleHireRecord from "./containers/veichlehire/CreateVeichleHireRecord";
 import CreateFuelExpenseRecord from "./containers/fuelExpense/CreateFuelExpenseRecord";
 import CreateInvoiceRecord from "./containers/invoice/CreateInvoiceRecord";
-import VehicleTyres from "./containers/vehicletyres/VehicleTyres"
-import AllVehicles from "./containers/vehicles/AllVeichles"
-import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire"
+import VehicleTyres from "./containers/vehicletyres/VehicleTyres";
+import AllVehicles from "./containers/vehicles/AllVeichles";
+import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire";
+import AllVehiclesOffRoad from "./containers/vehicles/AllVeichlesOffRoad";
 
 class App extends Component {
   render() {
@@ -67,6 +68,7 @@ class App extends Component {
             <Route path="/createvehicletyres" exact component={VehicleTyres}/>
             <Route path="/allvehicles" exact component={AllVehicles} />
             <Route path="/allveichleshire" exact component={AllVehiclesHire} />
+            <Route path="/allveichlesoffroad" exact component={AllVehiclesOffRoad} />
           </Switch>
         </Router>
       </div>
