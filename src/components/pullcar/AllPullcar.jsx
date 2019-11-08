@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AllMaintenance() {
+export default function AllPullcar() {
   return (
     <div className="row all-vehicles">
       <div className="col-md-2"></div>
@@ -9,7 +9,7 @@ export default function AllMaintenance() {
           <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <h4 class="mt-0 header-title">All Maintenance</h4>
+                <h4 class="mt-0 header-title">All Pullcar Planner</h4>
 
                 <table
                   id="datatable-buttons"

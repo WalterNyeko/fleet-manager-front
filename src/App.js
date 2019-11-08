@@ -27,6 +27,7 @@ import AllFuel from "./containers/fuelExpense/AllFuel";
 import AllDefects from "./containers/vehicledefects/AllDefects";
 import AllAccidents from "./components/accidents/AllAccidents";
 import AllMaintenance from "./components/maintenanace/AllMaintenance";
+import AllPullcar from "./components/pullcar/AllPullcar";
 
 class App extends Component {
   render() {
@@ -60,6 +61,7 @@ class App extends Component {
             <Route path="/alldefects" exact component={AllDefects} />
             <Route path="/allaccidents" exact component={AllAccidents} />
             <Route path="/allmaintenance" exact component={AllMaintenance} />
+            <Route path="/allpullcar" exact component={AllPullcar} />
           </Switch>
         </Router>
       </div>
