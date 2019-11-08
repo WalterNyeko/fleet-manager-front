@@ -22,6 +22,7 @@ import AllVehicles from "./containers/vehicles/AllVeichles";
 import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire";
 import AllVehiclesOffRoad from "./containers/vehicles/AllVeichlesOffRoad";
 import AllMarkedVehiclesAssets from "./containers/vehicles/AllVMarkedeichlesAssets";
+import AllTyres from "./containers/vehicletyres/AllTyres";
 
 class App extends Component {
   render() {
@@ -41,7 +42,7 @@ class App extends Component {
             <Route path="/createaccidentrecord" exact component={CreateAccidentRecord} />
             <Route path="/createcostingincured" exact component={CreateCostingIncuredRecord} />
             <Route path="/createpullcarincidence" exact component={CreatePullCar} />
-           <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
+            <Route path="/createmaintenacerecord" exact component={CreateMaintenanceRecord} />
             <Route path="/createvehicledefects" exact component={AddVehicleDefects} />
             <Route path="/createvehicleasset" exact component={VehicleAsset}/>
             <Route path="/createstockrecord" exact component={CreateStockRecord} />
@@ -50,6 +51,7 @@ class App extends Component {
             <Route path="/allveichleshire" exact component={AllVehiclesHire} />
             <Route path="/allveichlesoffroad" exact component={AllVehiclesOffRoad} />
             <Route path="/allmarkedveichlesassets" exact component={AllMarkedVehiclesAssets} />
+            <Route path="/alltyres" exact component={AllTyres} />
           </Switch>
         </Router>
       </div>
