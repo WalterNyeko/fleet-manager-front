@@ -30,6 +30,7 @@ import AllMaintenance from "./components/maintenanace/AllMaintenance";
 import AllPullcar from "./components/pullcar/AllPullcar";
 import AllCosting from "./components/costingIncured/AllCosting";
 import AllPurchase from "./components/invoice/AllPurchase";
+import AllStock from "./components/stock/AllStock";
 
 class App extends Component {
   render() {
@@ -66,6 +67,7 @@ class App extends Component {
             <Route path="/allpullcar" exact component={AllPullcar} />
             <Route path="/allcosting" exact component={AllCosting} />
             <Route path="/allpurchase" exact component={AllPurchase} />
+            <Route path="/allstock" exact component={AllStock} />
           </Switch>
         </Router>
       </div>
