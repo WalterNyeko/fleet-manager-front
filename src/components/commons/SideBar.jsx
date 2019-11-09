@@ -109,10 +109,10 @@ export default function SideBar() {
               </NavLink>
             </li>
             <li>
-              <a href="calendar.html" className="waves-effect">
+              <NavLink to="/allmanagementreports" className="waves-effect">
                 <i className="ti-calendar"></i>
                 <span>Management Reports</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
