@@ -21,95 +21,155 @@ export default function AddVeichleHire() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Rental Code</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Rental Code"
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Relief Registration No.</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Relief Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Extra Registration No.</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Extra Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Rental Cost Center</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Rental Cost Center"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Model Code</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Model Code"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Rental Status</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
+                            placeholder="Rental Status"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Number</label>
+                        <label>Vehicle Status</label>
                         <div>
                           <input
                             data-parsley-type="number"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only numbers"
+                            placeholder="Vehicle Status"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
+                        <label>From Date</label>
                         <div>
                           <input
                             data-parsley-type="alphanum"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="From Date"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>To Date</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="To Date"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Reason</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Reason"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Replaced Plate</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Replaced Plate"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Replaced Plate Cost Center</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Replaced Plate Cost Center"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Make Code</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Make Code"
                           />
                         </div>
                       </div>
