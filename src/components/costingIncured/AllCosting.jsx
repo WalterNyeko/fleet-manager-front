@@ -22,12 +22,12 @@ export default function AllCosting() {
                 >
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Registration No.</th>
+                      <th>Cost Center</th>
+                      <th>Date</th>
+                      <th>Costing Code</th>
+                      <th>Actual Value</th>
+                      <th>Reference</th>
                     </tr>
                   </thead>
                   <tbody>
