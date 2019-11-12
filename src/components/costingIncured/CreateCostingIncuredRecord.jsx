@@ -21,95 +21,71 @@ export default function AddCostingIncured() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Reference No.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Reference No."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Cost Center</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Cost Center"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Date</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Costing Code</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Costing Code"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Actual Value</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Actual Value"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Reference</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Number</label>
-                        <div>
-                          <input
-                            data-parsley-type="number"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter only numbers"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
-                        <div>
-                          <input
-                            data-parsley-type="alphanum"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Reference"
                           />
                         </div>
                       </div>
