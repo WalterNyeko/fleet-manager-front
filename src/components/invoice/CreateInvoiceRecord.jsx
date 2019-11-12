@@ -10,7 +10,7 @@ export default function AddInvoice() {
             <div className="page-title-box">
               <div className="row align-items-center">
                 <div className="col-sm-6">
-                  <h4 className="page-title">Add Invoice</h4>
+                  <h4 className="page-title">Add Purchase Order</h4>
                 </div>
                 <div className="col-sm-6"></div>
               </div>
@@ -21,95 +21,131 @@ export default function AddInvoice() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Order No.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Order No."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Created By</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Created By"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Reference No.</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Reference No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Supplier</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Supplier"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Workshop</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Workshop"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Order Date</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
+                            placeholder="Order Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Number</label>
+                        <label>Cost Center</label>
                         <div>
                           <input
                             data-parsley-type="number"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only numbers"
+                            placeholder="Cost Center"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
+                        <label>Registration No.</label>
                         <div>
                           <input
                             data-parsley-type="alphanum"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Registration No."
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Total Net</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Total Net"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Invoice No.</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Invoice No."
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Order Status</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Order Status"
                           />
                         </div>
                       </div>

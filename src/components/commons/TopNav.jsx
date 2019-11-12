@@ -204,7 +204,7 @@ export default function TopNav() {
                   New Stock Record
                 </NavLink>
                 <NavLink className="dropdown-item" to="/createinvoice">
-                  New Invoice
+                  New Purchase Order
                 </NavLink>
                 <NavLink className="dropdown-item" to="/createvehicletyres">
                   New Tyres
