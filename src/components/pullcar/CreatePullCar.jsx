@@ -21,95 +21,71 @@ export default function CreatePullCar() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Registration No.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Registration No."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Extra Registration No.</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Extra Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Make Code</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Make Code"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Model Code</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Model Code"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Start Date</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Start Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>End Date</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Number</label>
-                        <div>
-                          <input
-                            data-parsley-type="number"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter only numbers"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
-                        <div>
-                          <input
-                            data-parsley-type="alphanum"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="End Date"
                           />
                         </div>
                       </div>
