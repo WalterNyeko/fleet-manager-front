@@ -22,12 +22,12 @@ export default function AllPullcar() {
                 >
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
+                      <th>Registration No.</th>
+                      <th>Extra Registration No.</th>
+                      <th>Make Code</th>
+                      <th>Model Code</th>
                       <th>Start date</th>
-                      <th>Salary</th>
+                      <th>End Date</th>
                     </tr>
                   </thead>
                   <tbody>
