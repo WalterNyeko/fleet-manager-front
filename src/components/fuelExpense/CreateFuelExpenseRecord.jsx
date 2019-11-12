@@ -21,95 +21,119 @@ export default function AddFuelExpense() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Registration No.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Registration No."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Import Issue</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Import Issue"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Date</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Amount</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Amount"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Cost</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Cost"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Price Per Unit</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
+                            placeholder="Price Per Unit"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Number</label>
+                        <label>Fuel Type</label>
                         <div>
                           <input
                             data-parsley-type="number"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only numbers"
+                            placeholder="Fuel Type"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
+                        <label>Odometer</label>
                         <div>
                           <input
                             data-parsley-type="alphanum"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Odometer"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Location Code</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Location Code"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Litres per 100K</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Litres per 100K"
                           />
                         </div>
                       </div>

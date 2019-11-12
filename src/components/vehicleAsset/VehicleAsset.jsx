@@ -10,7 +10,7 @@ export default function VehicleAsset() {
             <div className="page-title-box">
               <div className="row align-items-center">
                 <div className="col-sm-6">
-                  <h4 className="page-title">Add Vehicle Assets</h4>
+                  <h4 className="page-title">Add Vehicle Marked Assets</h4>
                 </div>
                 <div className="col-sm-6"></div>
               </div>
@@ -21,95 +21,119 @@ export default function VehicleAsset() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Registration No.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Registration No."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Extra Registration No.</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Extra Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Asset Description</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Asset Description"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Asset Type</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Asset Type"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Asset Make</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Asset Make"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Asset Model</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
+                            placeholder="Asset Model"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Number</label>
+                        <label>Asset Issue Date</label>
                         <div>
                           <input
                             data-parsley-type="number"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only numbers"
+                            placeholder="Asset Issue Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
+                        <label>Asset Return Date</label>
                         <div>
                           <input
                             data-parsley-type="alphanum"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Asset Return Date"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Asset Serial</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Asset Serial"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Driver Name</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Driver Name"
                           />
                         </div>
                       </div>

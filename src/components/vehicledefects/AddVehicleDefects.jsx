@@ -21,95 +21,71 @@ export default function AddVehicleDefects() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Defect</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Defect"
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Job Authorization No.</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Job Authorization No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Registration No.</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Extra Registration No.</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Extra Registration Number"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Defect Date</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Defect Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Notes</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Number</label>
-                        <div>
-                          <input
-                            data-parsley-type="number"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter only numbers"
-                          />
-                        </div>
-                      </div>
-                      <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
-                        <div>
-                          <input
-                            data-parsley-type="alphanum"
-                            type="text"
-                            className="form-control"
-                            required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Notes"
                           />
                         </div>
                       </div>
