@@ -21,95 +21,143 @@ export default function AddAccident() {
                   <div className="card-body">
                     <form className="row" action="#">
                       <div className="form-group col-md-6">
-                        <label>Required</label>{" "}
+                        <label>Accident Ref.</label>{" "}
                         <input
                           type="text"
                           className="form-control"
                           required
-                          placeholder="Type something"
+                          placeholder="Accident Ref."
                         />
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Equal To</label>
+                        <label>Registration No.</label>
                         <div>
                           <input
                             type="password"
                             id="pass2"
                             className="form-control"
                             required
-                            placeholder="Password"
+                            placeholder="Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Re-Type Password</label>
+                        <label>Accident Status</label>
                         <div>
                           <input
                             type="password"
                             className="form-control"
                             required
                             data-parsley-equalto="#pass2"
-                            placeholder="Re-Type Password"
+                            placeholder="Accident Status"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>E-Mail</label>
+                        <label>Extra Registration No.</label>
                         <div>
                           <input
                             type="email"
                             className="form-control"
                             required
                             parsley-type="email"
-                            placeholder="Enter a valid e-mail"
+                            placeholder="Extra Registration No."
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>URL</label>
+                        <label>Third Party Involved</label>
                         <div>
                           <input
                             parsley-type="url"
                             type="url"
                             className="form-control"
                             required
-                            placeholder="URL"
+                            placeholder="Third Party Involved"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Digits</label>
+                        <label>Total Cost (Net)</label>
                         <div>
                           <input
                             data-parsley-type="digits"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only digits"
+                            placeholder="Total Cost (Net)"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Number</label>
+                        <label>Accident Date</label>
                         <div>
                           <input
                             data-parsley-type="number"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter only numbers"
+                            placeholder="Accident Date"
                           />
                         </div>
                       </div>
                       <div className="form-group col-md-6">
-                        <label>Alphanumeric</label>
+                        <label>Driver Name</label>
                         <div>
                           <input
                             data-parsley-type="alphanum"
                             type="text"
                             className="form-control"
                             required
-                            placeholder="Enter alphanumeric value"
+                            placeholder="Driver Name"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Make Code</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Make Code"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Model Code</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Model Code"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Division/Client</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Division/Client"
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group col-md-6">
+                        <label>Comment</label>
+                        <div>
+                          <input
+                            data-parsley-type="alphanum"
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Comment"
                           />
                         </div>
                       </div>
