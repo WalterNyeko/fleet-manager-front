@@ -186,6 +186,11 @@ export default function AllCustomerRelations() {
                       <td>22</td>
                       <td>2013/03/03</td>
                       <td>$342,000</td>
+                      <td>Workshop</td>
+                      <td>Date</td>
+                      <td>Created By</td>
+                      <td>Changed By</td>
+                      <td>Date</td>
                     </tr>
                     <tr>
                       <td>Charde Marshall</td>

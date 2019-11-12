@@ -221,6 +221,9 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/createcustomerrelations">
                   New Customer Relations
                 </NavLink>
+                <NavLink className="dropdown-item" to="/createinsurancecertificate">
+                  New Insurance Certificate
+                </NavLink>
               </div>
             </div>
           </li>
