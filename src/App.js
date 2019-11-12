@@ -35,6 +35,7 @@ import AllCustomerRelations from "./components/customerrelations/AllCustomerRela
 import AllInsuranceCertificate from "./components/insurancecertificate/AllInsuranceCertificate";
 import AllManagementReports from "./components/managementreports/AllManagementReports";
 import VehiclesOffRoad from "./containers/vehicles/VehicleOffRoad";
+import CreateCustomerRelations from "./components/customerrelations/CreateCustomer Relations";
 
 class App extends Component {
   render() {
@@ -76,6 +77,7 @@ class App extends Component {
             <Route path="/allinsurancecertificates" exact component={AllInsuranceCertificate} />
             <Route path="/allmanagementreports" exact component={AllManagementReports} />
             <Route path="/vehiclesoffraod" exact component={VehiclesOffRoad} />
+            <Route path="/createcustomerrelations" exact component={CreateCustomerRelations} />
           </Switch>
         </Router>
       </div>

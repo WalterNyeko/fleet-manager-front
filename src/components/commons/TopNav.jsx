@@ -216,7 +216,10 @@ export default function TopNav() {
                   New Fuel Expense Record
                 </NavLink>
                 <NavLink className="dropdown-item" to="/vehiclesoffraod">
-                  New New Vehicle Off Road
+                  New Vehicle Off Road
+                </NavLink>
+                <NavLink className="dropdown-item" to="/createcustomerrelations">
+                  New Customer Relations
                 </NavLink>
               </div>
             </div>
