@@ -45,13 +45,13 @@ export default function AllVeichlesHire() {
                       <td>61</td>
                       <td>2011/04/25</td>
                       <td>$320,800</td>
-                      <th>Vehicle Status</th>
-                      <th>From Date</th>
-                      <th>To Date</th>
-                      <th>Reason</th>
-                      <th>Replaced Plate</th>
-                      <th>Replaced Plate Cost Center</th>
-                      <th>Make Code</th>
+                      <td>Vehicle Status</td>
+                      <td>From Date</td>
+                      <td>To Date</td>
+                      <td>Reason</td>
+                      <td>Replaced Plate</td>
+                      <td>Replaced Plate Cost Center</td>
+                      <td>Make Code</td>
                     </tr>
                     <tr>
                       <td>Garrett Winters</td>
@@ -60,13 +60,13 @@ export default function AllVeichlesHire() {
                       <td>63</td>
                       <td>2011/07/25</td>
                       <td>$170,750</td>
-                      <th>Vehicle Status</th>
-                      <th>From Date</th>
-                      <th>To Date</th>
-                      <th>Reason</th>
-                      <th>Replaced Plate</th>
-                      <th>Replaced Plate Cost Center</th>
-                      <th>Make Code</th>
+                      <td>Vehicle Status</td>
+                      <td>From Date</td>
+                      <td>To Date</td>
+                      <td>Reason</td>
+                      <td>Replaced Plate</td>
+                      <td>Replaced Plate Cost Center</td>
+                      <td>Make Code</td>
                     </tr>
                     <tr>
                       <td>Ashton Cox</td>
@@ -75,13 +75,13 @@ export default function AllVeichlesHire() {
                       <td>66</td>
                       <td>2009/01/12</td>
                       <td>$86,000</td>
-                      <th>Vehicle Status</th>
-                      <th>From Date</th>
-                      <th>To Date</th>
-                      <th>Reason</th>
-                      <th>Replaced Plate</th>
-                      <th>Replaced Plate Cost Center</th>
-                      <th>Make Code</th>
+                      <td>Vehicle Status</td>
+                      <td>From Date</td>
+                      <td>To Date</td>
+                      <td>Reason</td>
+                      <td>Replaced Plate</td>
+                      <td>Replaced Plate Cost Center</td>
+                      <td>Make Code</td>
                     </tr>
                     <tr>
                       <td>Cedric Kelly</td>
@@ -90,13 +90,13 @@ export default function AllVeichlesHire() {
                       <td>22</td>
                       <td>2012/03/29</td>
                       <td>$433,060</td>
-                      <th>Vehicle Status</th>
-                      <th>From Date</th>
-                      <th>To Date</th>
-                      <th>Reason</th>
-                      <th>Replaced Plate</th>
-                      <th>Replaced Plate Cost Center</th>
-                      <th>Make Code</th>
+                      <td>Vehicle Status</td>
+                      <td>From Date</td>
+                      <td>To Date</td>
+                      <td>Reason</td>
+                      <td>Replaced Plate</td>
+                      <td>Replaced Plate Cost Center</td>
+                      <td>Make Code</td>
                     </tr>
                     <tr>
                       <td>Airi Satou</td>

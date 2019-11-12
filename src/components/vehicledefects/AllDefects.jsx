@@ -22,12 +22,12 @@ export default function AllDefects() {
                 >
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Defect</th>
+                      <th>Job Authorization Number</th>
+                      <th>Registration No.</th>
+                      <th>Extra Registration No.</th>
+                      <th>Defect Date</th>
+                      <th>Notes</th>
                     </tr>
                   </thead>
                   <tbody>
