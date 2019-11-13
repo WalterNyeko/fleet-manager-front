@@ -1,5 +1,6 @@
 import React from "react";
 import VehicleMajorComponent from "./CreateVehicle";
+import VehicleSummaryComponent from "./VehicleSummary"
 
 export default function CreateVehicles() {
   return (
@@ -152,7 +153,7 @@ export default function CreateVehicles() {
                     <VehicleMajorComponent />
                   </div>
                   <div class="tab-pane p-3" id="summary-1" role="tabpanel">
-                    <p class="mb-0">Vehicle Summary Page</p>
+                    <VehicleSummaryComponent />
                   </div>
                   <div class="tab-pane p-3" id="basic-1" role="tabpanel">
                     <p class="mb-0">Basic Info page</p>
