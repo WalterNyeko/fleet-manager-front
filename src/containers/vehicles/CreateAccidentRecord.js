@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import AddAccidentComponent from "../../components/accidents/CreateAccidentRecord";
+import AddAccidentComponent from "../../components/vehicles/CreateAccidentRecord";
 
 export default class AddAccident extends Component {
   render() {

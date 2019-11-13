@@ -8,7 +8,7 @@ import TopNav from "./containers/commons/TopNav";
 import ForgotPassword from "./containers/forgotPassword/ForgotPassword";
 import CreateVehicle from "./containers/vehicles/CreateVehicle";
 import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
-import CreateAccidentRecord from "./containers/accidents/CreateAccidentRecord";
+import CreateAccidentRecord from "./containers/vehicles/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
 import CreatePullCar from "./containers/pullcar/CreatePullCar";
 import CreateStockRecord from "./containers/stock/CreateStockRecord";

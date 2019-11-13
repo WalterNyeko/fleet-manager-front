@@ -8,6 +8,7 @@ import VehicleAssetComponent from "./VehicleAsset";
 import LeaseComponent from "./Lease";
 import NotesComponent from "./Notes";
 import MajorComponent from "./Major";
+import AddAccidentComponent from "./CreateAccidentRecord";
 
 export default function CreateVehicles() {
   return (
@@ -82,7 +83,7 @@ export default function CreateVehicles() {
                       <span class="d-block d-sm-none">
                         <i class="far fa-user"></i>
                       </span>{" "}
-                      <span class="d-none d-sm-block">Repairs</span>
+                      <span class="d-none d-sm-block">Repairs & Accident</span>
                     </a>
                   </li>
                   <li class="nav-item waves-effect waves-light">
@@ -169,7 +170,7 @@ export default function CreateVehicles() {
                     <VehicleDiaryComponent />
                   </div>
                   <div class="tab-pane p-3" id="repairs-1" role="tabpanel">
-                    <p class="mb-0">Vehicle Repair Page</p>
+                    <AddAccidentComponent />
                   </div>
                   <div class="tab-pane p-3" id="allocation-1" role="tabpanel">
                     <VehicleAllocationComponent />
