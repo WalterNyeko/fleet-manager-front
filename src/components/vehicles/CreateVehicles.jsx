@@ -5,6 +5,7 @@ import VehicleBasicComponent from "./VehicleBasic";
 import VehicleDiaryComponent from "./VehicleDiary";
 import VehicleAllocationComponent from "./VehicleAllocation";
 import VehicleAssetComponent from "./VehicleAsset";
+import LeaseComponent from "./Lease";
 
 export default function CreateVehicles() {
   return (
@@ -182,7 +183,7 @@ export default function CreateVehicles() {
                     <VehicleAssetComponent />
                   </div>
                   <div class="tab-pane p-3" id="lease-1" role="tabpanel">
-                    <p class="mb-0">Vehicle Lease Page</p>
+                    <LeaseComponent />
                   </div>
                   <div class="tab-pane p-3" id="notes-1" role="tabpanel">
                     <p class="mb-0">Vehicle Notes Page</p>
