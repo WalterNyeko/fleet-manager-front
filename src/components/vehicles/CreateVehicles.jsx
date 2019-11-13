@@ -3,7 +3,7 @@ import VehicleMajorComponent from "./CreateVehicle";
 import VehicleSummaryComponent from "./VehicleSummary";
 import VehicleBasicComponent from "./VehicleBasic";
 import VehicleDiaryComponent from "./VehicleDiary";
-
+import VehicleAllocationComponent from "./VehicleAllocation";
 
 export default function CreateVehicles() {
   return (
@@ -168,7 +168,7 @@ export default function CreateVehicles() {
                     <p class="mb-0">Vehicle Repair Page</p>
                   </div>
                   <div class="tab-pane p-3" id="allocation-1" role="tabpanel">
-                    <p class="mb-0">Vehicle Allocation Page</p>
+                    <VehicleAllocationComponent />
                   </div>
                   <div class="tab-pane p-3" id="assets-1" role="tabpanel">
                     <p class="mb-0">Vehicle Assets Page</p>
