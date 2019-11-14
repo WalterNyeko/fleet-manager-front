@@ -1,19 +1,22 @@
 import React from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
-export default function CreateVehicle() {
+const CreateVehicle = ({
+  handleWorkshopReturnDateChange,
+  handleRegistrationDateChange,
+  workshopReturnDate,
+  registrationDate
+}) => {
   return (
     <div className="row">
+      <hr />
       <form className="row" action="#">
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Registration No.</label>{" "}
-          <input
-            type="text"
-            className="form-control"
-            required
-            placeholder=""
-          />
+          <input type="text" className="form-control" required placeholder="" />
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Fleet Number</label>
           <div>
             <input
@@ -25,7 +28,7 @@ export default function CreateVehicle() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Vehicle Tyre</label>
           <div>
             <select className="browser-default custom-select">
@@ -44,7 +47,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Extra Registration No.</label>
           <div>
             <input
@@ -56,7 +59,7 @@ export default function CreateVehicle() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Vehicle Status</label>
           <div>
             <select className="browser-default custom-select">
@@ -71,7 +74,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Body Type</label>
           <div>
             <select className="browser-default custom-select">
@@ -86,7 +89,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Returned to Workshop</label>
           <div>
             <select className="browser-default custom-select">
@@ -99,19 +102,17 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Date Returned to Workshop</label>
           <div>
-            <input
-              data-parsley-type="alphanum"
-              type="text"
+            <DatePicker
+              selected={workshopReturnDate}
+              onChange={handleWorkshopReturnDateChange}
               className="form-control"
-              required
-              placeholder=""
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Make Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -124,7 +125,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Model Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -137,7 +138,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Company Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -150,7 +151,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Fuel Type</label>
           <div>
             <select className="browser-default custom-select">
@@ -164,7 +165,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>County</label>
           <div>
             <select className="browser-default custom-select">
@@ -177,19 +178,17 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Date Registered</label>
           <div>
-            <input
-              data-parsley-type="alphanum"
-              type="text"
+            <DatePicker
+              selected={registrationDate}
+              onChange={handleRegistrationDateChange}
               className="form-control"
-              required
-              placeholder=""
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Cost Center</label>
           <div>
             <select className="browser-default custom-select">
@@ -202,7 +201,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Year</label>
           <div>
             <input
@@ -214,7 +213,7 @@ export default function CreateVehicle() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Division/Client</label>
           <div>
             <select className="browser-default custom-select">
@@ -227,22 +226,26 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Conversion Type</label>
           <div>
             <select className="browser-default custom-select">
               <option value="conversion"></option>
-              <option value="conversion">Fibre Body & rollcage with canvas</option>
+              <option value="conversion">
+                Fibre Body & rollcage with canvas
+              </option>
               <option value="conversion">Superstructure with canvas</option>
               <option value="conversion">High sided boy SS & canvas</option>
-              <option value="conversion">Low sided body SS W/bench seat & canvas</option>
+              <option value="conversion">
+                Low sided body SS W/bench seat & canvas
+              </option>
               <option value="conversion">Rear Metallic Body</option>
               <option value="conversion">Simple structure with Canvas</option>
               <option value="conversion">Caravan</option>
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Deriviate</label>
           <div>
             <select className="browser-default custom-select">
@@ -250,7 +253,7 @@ export default function CreateVehicle() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4 mb-0">
+        <div className="form-group col-md-3 mb-0">
           <div>
             <button
               type="submit"
@@ -266,4 +269,5 @@ export default function CreateVehicle() {
       </form>
     </div>
   );
-}
+};
+export default CreateVehicle;

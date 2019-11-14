@@ -1,12 +1,18 @@
 import React from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
-export default function Notes() {
+export default function Notes({ handleDateChange, date }) {
   return (
     <div className="row">
       <form className="row" action="#">
-      <div className="form-group col-md-4">
-          <label>Date</label>{" "}
-          <input type="text" className="form-control" required placeholder="" />
+        <div className="form-group col-md-4">
+          <label>Date</label> <br />
+          <DatePicker
+            selected={date}
+            onChange={handleDateChange}
+            className="form-control"
+          />
         </div>
         <div className="form-group col-md-4">
           <label>Contract Baloon Payment</label>{" "}
