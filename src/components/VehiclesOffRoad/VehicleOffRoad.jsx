@@ -1,6 +1,7 @@
 import React from "react";
 import OffRoadInfoComponent from "./OffRoadInfo";
 import OffRoadTrackingComponent from "./OffRoadTracking";
+import OffRoadApprovalComponent from "./OffRoadApproval";
 
 export default function VehicleOffRoad() {
   return (
@@ -67,7 +68,7 @@ export default function VehicleOffRoad() {
                     <OffRoadTrackingComponent />
                   </div>
                   <div class="tab-pane p-3" id="approval-1" role="tabpanel">
-                    {/* <RentalDetailsComponent /> */}
+                    <OffRoadApprovalComponent />
                   </div>
                 </div>
               </div>
