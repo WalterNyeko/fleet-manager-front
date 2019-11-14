@@ -2,6 +2,7 @@ import React from "react";
 import OffRoadInfoComponent from "./OffRoadInfo";
 import OffRoadTrackingComponent from "./OffRoadTracking";
 import OffRoadApprovalComponent from "./OffRoadApproval";
+import OffRoadJobApprovalComponent from "./OffRoadJobApprovals";
 
 export default function VehicleOffRoad() {
   return (
@@ -55,6 +56,21 @@ export default function VehicleOffRoad() {
                       <span class="d-none d-sm-block">Approval</span>
                     </a>
                   </li>
+                  <li class="nav-item waves-effect waves-light">
+                    <a
+                      class="nav-link"
+                      data-toggle="tab"
+                      href="#jobapproval-1"
+                      role="tab"
+                    >
+                      <span class="d-block d-sm-none">
+                        <i class="fas fa-cog"></i>
+                      </span>{" "}
+                      <span class="d-none d-sm-block">
+                        Suprementary Job Approvals
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                 <div class="tab-content">
                   <div
@@ -69,6 +85,9 @@ export default function VehicleOffRoad() {
                   </div>
                   <div class="tab-pane p-3" id="approval-1" role="tabpanel">
                     <OffRoadApprovalComponent />
+                  </div>
+                  <div class="tab-pane p-3" id="jobapproval-1" role="tabpanel">
+                    <OffRoadJobApprovalComponent />
                   </div>
                 </div>
               </div>
