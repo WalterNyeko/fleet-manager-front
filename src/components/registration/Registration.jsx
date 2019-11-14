@@ -7,9 +7,9 @@ const Register = ({ handleSubmit }) => {
       <div className="wrapper-page">
         <div className="card overflow-hidden account-card mx-3">
           <div className="bg-primary p-4 text-white text-center position-relative">
-            <h4 className="font-20 m-b-5">Free Register</h4>
+            <h4 className="font-20 m-b-5">Register</h4>
             <p className="text-white-50 mb-4">
-              Get your free Veltrix account now.
+              Get your Fleet Manager account now.
             </p>
             <a href="index.html" className="logo logo-admin">
               <img src="assets/images/logo-sm.png" height="24" alt="logo" />
@@ -61,7 +61,7 @@ const Register = ({ handleSubmit }) => {
               <div className="form-group m-t-10 mb-0 row">
                 <div className="col-12 m-t-20">
                   <p className="mb-0">
-                    By registering you agree to the Veltrix
+                    By registering you agree to the Fleet Manager
                     <NavLink to="#" className="text-primary">
                       Terms of Use
                     </NavLink>
