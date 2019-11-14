@@ -1,5 +1,6 @@
 import React from "react";
 import HireInfoComponent from "./HireInfo";
+import HireDetailsComponent from "./HireDetails";
 
 export default function CreateVehiclesHireRecord() {
   return (
@@ -16,7 +17,7 @@ export default function CreateVehiclesHireRecord() {
                     <a
                       class="nav-link active"
                       data-toggle="tab"
-                      href="#default-1"
+                      href="#hireinfo-1"
                       role="tab"
                     >
                       <span class="d-block d-sm-none">
@@ -29,33 +30,22 @@ export default function CreateVehiclesHireRecord() {
                     <a
                       class="nav-link"
                       data-toggle="tab"
-                      href="#summary-1"
-                      role="tab"
-                    >
-                      <span class="d-block d-sm-none">
-                        <i class="far fa-user"></i>
-                      </span>{" "}
-                      <span class="d-none d-sm-block">Vehicle Hire</span>
-                    </a>
-                  </li>
-                  <li class="nav-item waves-effect waves-light">
-                    <a
-                      class="nav-link"
-                      data-toggle="tab"
-                      href="#basic-1"
+                      href="#rental-1"
                       role="tab"
                     >
                       <span class="d-block d-sm-none">
                         <i class="far fa-envelope"></i>
                       </span>{" "}
-                      <span class="d-none d-sm-block">Rental Collection Details</span>
+                      <span class="d-none d-sm-block">
+                        Rental Collection Details
+                      </span>
                     </a>
                   </li>
                   <li class="nav-item waves-effect waves-light">
                     <a
                       class="nav-link"
                       data-toggle="tab"
-                      href="#diary-1"
+                      href="#revenue-1"
                       role="tab"
                     >
                       <span class="d-block d-sm-none">
@@ -68,15 +58,15 @@ export default function CreateVehiclesHireRecord() {
                 <div class="tab-content">
                   <div
                     class="tab-pane active p-3"
-                    id="default-1"
+                    id="hireinfo-1"
                     role="tabpanel"
                   >
                     <HireInfoComponent />
                   </div>
-                  <div class="tab-pane p-3" id="summary-1" role="tabpanel">
-                    {/* <VehicleSummaryComponent /> */}
+                  <div class="tab-pane p-3" id="rental-1" role="tabpanel">
+                    <HireDetailsComponent />
                   </div>
-                  <div class="tab-pane p-3" id="basic-1" role="tabpanel">
+                  <div class="tab-pane p-3" id="revenue-1" role="tabpanel">
                     {/* <VehicleBasicComponent /> */}
                   </div>
                 </div>
