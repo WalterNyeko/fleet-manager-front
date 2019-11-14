@@ -10,7 +10,7 @@ export default function CreateVehicle() {
             type="text"
             className="form-control"
             required
-            placeholder="Registration No."
+            placeholder=""
           />
         </div>
         <div className="form-group col-md-4">
@@ -21,7 +21,7 @@ export default function CreateVehicle() {
               id="pass2"
               className="form-control"
               required
-              placeholder="Fleet Number"
+              placeholder=""
             />
           </div>
         </div>
@@ -29,6 +29,7 @@ export default function CreateVehicle() {
           <label>Vehicle Tyre</label>
           <div>
             <select className="browser-default custom-select">
+              <option selected></option>
               <option selected>Car</option>
               <option value="type">Chassis Cabine</option>
               <option value="type">Forklift</option>
@@ -51,7 +52,7 @@ export default function CreateVehicle() {
               className="form-control"
               required
               parsley-type="email"
-              placeholder="Extra Registration No."
+              placeholder=""
             />
           </div>
         </div>
@@ -59,6 +60,7 @@ export default function CreateVehicle() {
           <label>Vehicle Status</label>
           <div>
             <select className="browser-default custom-select">
+              <option value="status"></option>
               <option value="status">Live</option>
               <option value="status">Insure/Write Off</option>
               <option value="status">Lease Expired & Returned</option>
@@ -73,6 +75,7 @@ export default function CreateVehicle() {
           <label>Body Type</label>
           <div>
             <select className="browser-default custom-select">
+              <option value="body"></option>
               <option value="body">Station Wagon 5dr</option>
               <option value="body">SUV</option>
               <option value="body">Targa 2dr</option>
@@ -104,7 +107,7 @@ export default function CreateVehicle() {
               type="text"
               className="form-control"
               required
-              placeholder="Date Returned to Workshop"
+              placeholder=""
             />
           </div>
         </div>

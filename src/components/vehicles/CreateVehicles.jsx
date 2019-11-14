@@ -83,7 +83,7 @@ export default function CreateVehicles() {
                       <span class="d-block d-sm-none">
                         <i class="far fa-user"></i>
                       </span>{" "}
-                      <span class="d-none d-sm-block">Repairs & Accident</span>
+                      <span class="d-none d-sm-block">Repairs</span>
                     </a>
                   </li>
                   <li class="nav-item waves-effect waves-light">

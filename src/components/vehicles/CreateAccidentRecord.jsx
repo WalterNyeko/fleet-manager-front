@@ -1,11 +1,12 @@
 import React from "react";
+import RepairInfoComponent from "./RepairInfo";
 
-export default function CreateVehicles() {
+export default function AccidentRecord() {
   return (
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body">
-          <ul class="nav nav-pills nav-justified" role="tablist">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
             <li class="nav-item waves-effect waves-light">
               <a
                 class="nav-link active"
@@ -64,7 +65,7 @@ export default function CreateVehicles() {
           </ul>
           <div class="tab-content">
             <div class="tab-pane active p-3" id="default" role="tabpanel">
-              first
+                <RepairInfoComponent />
             </div>
             <div class="tab-pane p-3" id="description-1" role="tabpanel">
               second
