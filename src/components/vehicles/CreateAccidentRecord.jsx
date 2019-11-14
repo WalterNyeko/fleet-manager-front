@@ -3,6 +3,7 @@ import RepairInfoComponent from "./RepairInfo";
 import RepairDescriptionComponent from "./RepairDescription";
 import RepairCostComponent from "./RepairCost";
 import RepairInvoiceComponent from "./RepairInvoice";
+import RepairHistoryComponent from "./RepairHistory";
 
 export default function AccidentRecord() {
   return (
@@ -85,7 +86,7 @@ export default function AccidentRecord() {
               <RepairInvoiceComponent />
             </div>
             <div class="tab-pane p-3" id="service-1" role="tabpanel">
-              fith
+            <RepairHistoryComponent />
             </div>
           </div>
         </div>
