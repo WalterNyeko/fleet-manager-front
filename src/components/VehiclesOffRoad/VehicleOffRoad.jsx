@@ -1,5 +1,6 @@
 import React from "react";
 import OffRoadInfoComponent from "./OffRoadInfo";
+import OffRoadTrackingComponent from "./OffRoadTracking";
 
 export default function VehicleOffRoad() {
   return (
@@ -29,14 +30,14 @@ export default function VehicleOffRoad() {
                     <a
                       class="nav-link"
                       data-toggle="tab"
-                      href="#rental-1"
+                      href="#tracking-1"
                       role="tab"
                     >
                       <span class="d-block d-sm-none">
                         <i class="far fa-envelope"></i>
                       </span>{" "}
                       <span class="d-none d-sm-block">
-                        Rental Collection Details
+                        Grounded Vehicle Tracking Sheet
                       </span>
                     </a>
                   </li>
@@ -44,13 +45,13 @@ export default function VehicleOffRoad() {
                     <a
                       class="nav-link"
                       data-toggle="tab"
-                      href="#revenue-1"
+                      href="#approval-1"
                       role="tab"
                     >
                       <span class="d-block d-sm-none">
                         <i class="fas fa-cog"></i>
                       </span>{" "}
-                      <span class="d-none d-sm-block">Rental Revenue</span>
+                      <span class="d-none d-sm-block">Approval</span>
                     </a>
                   </li>
                 </ul>
@@ -62,10 +63,10 @@ export default function VehicleOffRoad() {
                   >
                     <OffRoadInfoComponent />
                   </div>
-                  <div class="tab-pane p-3" id="rental-1" role="tabpanel">
-                    {/* <HireDetailsComponent /> */}
+                  <div class="tab-pane p-3" id="tracking-1" role="tabpanel">
+                    <OffRoadTrackingComponent />
                   </div>
-                  <div class="tab-pane p-3" id="revenue-1" role="tabpanel">
+                  <div class="tab-pane p-3" id="approval-1" role="tabpanel">
                     {/* <RentalDetailsComponent /> */}
                   </div>
                 </div>
