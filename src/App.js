@@ -19,7 +19,7 @@ import CreateInvoiceRecord from "./containers/invoice/CreateInvoiceRecord";
 import VehicleTyres from "./containers/vehicletyres/VehicleTyres";
 import AllVehicles from "./containers/vehicles/AllVeichles";
 import AllVehiclesHire from "./containers/veichlehire/AllVeichlesHire";
-import AllVehiclesOffRoad from "./containers/vehicles/AllVeichlesOffRoad";
+import AllVehiclesOffRoad from "./containers/vehiclesOffRoad/AllVeichlesOffRoad";
 import AllMarkedVehiclesAssets from "./containers/vehicles/AllVMarkedeichlesAssets";
 import AllTyres from "./containers/vehicletyres/AllTyres";
 import AllFuel from "./containers/fuelExpense/AllFuel";
@@ -33,7 +33,7 @@ import AllStock from "./containers/stock/AllStock";
 import AllCustomerRelations from "./containers/customerrelations/AllCustomerRelations";
 import AllInsuranceCertificate from "./containers/insurancecertificate/AllInsuranceCertificate";
 import AllManagementReports from "./containers/managementreports/AllManagementReports";
-import VehiclesOffRoad from "./containers/vehicles/VehicleOffRoad";
+import VehiclesOffRoad from "./containers/vehiclesOffRoad/VehicleOffRoad";
 import CreateCustomerRelations from "./containers/customerrelations/CreateCustomerRelations";
 import CreateInsuaranceCertificate from "./containers/insurancecertificate/CreateInsuranceCertificate";
 

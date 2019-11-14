@@ -1,5 +1,5 @@
 import React, { Component, Fragment  } from  "react";
-import VehicleOffRoadComponent from "../../components/vehicles/VehicleOffRoad";
+import VehicleOffRoadComponent from "../../components/VehiclesOffRoad/VehicleOffRoad";
 
 class  VehicleOffRoad extends Component {
     render() { 
