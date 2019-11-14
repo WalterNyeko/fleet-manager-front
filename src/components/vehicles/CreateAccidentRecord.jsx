@@ -1,6 +1,7 @@
 import React from "react";
 import RepairInfoComponent from "./RepairInfo";
 import RepairDescriptionComponent from "./RepairDescription";
+import RepairCostComponent from "./RepairCost";
 
 export default function AccidentRecord() {
   return (
@@ -77,7 +78,7 @@ export default function AccidentRecord() {
               <RepairDescriptionComponent />
             </div>
             <div class="tab-pane p-3" id="cost-1" role="tabpanel">
-              third
+              <RepairCostComponent />
             </div>
             <div class="tab-pane p-3" id="invoice-1" role="tabpanel">
               forth
