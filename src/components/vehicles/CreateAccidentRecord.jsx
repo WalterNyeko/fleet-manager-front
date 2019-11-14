@@ -1,5 +1,6 @@
 import React from "react";
 import RepairInfoComponent from "./RepairInfo";
+import RepairDescriptionComponent from "./RepairDescription";
 
 export default function AccidentRecord() {
   return (
@@ -42,7 +43,12 @@ export default function AccidentRecord() {
               </a>
             </li>
             <li class="nav-item waves-effect waves-light">
-              <a class="nav-link" data-toggle="tab" href="#invoice-1" role="tab">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#invoice-1"
+                role="tab"
+              >
                 <span class="d-block d-sm-none">
                   <i class="fas fa-cog"></i>
                 </span>{" "}
@@ -65,10 +71,10 @@ export default function AccidentRecord() {
           </ul>
           <div class="tab-content">
             <div class="tab-pane active p-3" id="default" role="tabpanel">
-                <RepairInfoComponent />
+              <RepairInfoComponent />
             </div>
             <div class="tab-pane p-3" id="description-1" role="tabpanel">
-              second
+              <RepairDescriptionComponent />
             </div>
             <div class="tab-pane p-3" id="cost-1" role="tabpanel">
               third
