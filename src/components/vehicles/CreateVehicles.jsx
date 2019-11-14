@@ -10,7 +10,22 @@ import NotesComponent from "./Notes";
 import MajorComponent from "./Major";
 import AddAccidentComponent from "./CreateAccidentRecord";
 
-export default function CreateVehicles() {
+export default function CreateVehicles({
+  handleDateChange,
+  handleLeaseEndDateChange,
+  handleContractStartDateChange,
+  handlePaymentDateChange,
+  handleReleaseDateChange,
+  handleWorkshopReturnDateChange,
+  handleRegistrationDateChange,
+  contractStartDate,
+  paymentDate,
+  releaseDate,
+  leaseEndDate,
+  workshopReturnDate,
+  registrationDate,
+  date
+}) {
   return (
     <div className="row">
       <div className="col-md-2"></div>
@@ -158,7 +173,16 @@ export default function CreateVehicles() {
                     id="default-1"
                     role="tabpanel"
                   >
-                    <VehicleMajorComponent />
+                    <VehicleMajorComponent
+                      handleWorkshopReturnDateChange={
+                        handleWorkshopReturnDateChange
+                      }
+                      handleRegistrationDateChange={
+                        handleRegistrationDateChange
+                      }
+                      workshopReturnDate={workshopReturnDate}
+                      registrationDate={registrationDate}
+                    />
                   </div>
                   <div class="tab-pane p-3" id="summary-1" role="tabpanel">
                     <VehicleSummaryComponent />
@@ -186,10 +210,24 @@ export default function CreateVehicles() {
                     <MajorComponent />
                   </div>
                   <div class="tab-pane p-3" id="lease-1" role="tabpanel">
-                    <LeaseComponent />
+                    <LeaseComponent
+                      handleLeaseEndDateChange={handleLeaseEndDateChange}
+                      handleContractStartDateChange={
+                        handleContractStartDateChange
+                      }
+                      handlePaymentDateChange={handlePaymentDateChange}
+                      handleReleaseDateChange={handleReleaseDateChange}
+                      leaseEndDate={leaseEndDate}
+                      contractStartDate={contractStartDate}
+                      paymentDate={paymentDate}
+                      releaseDate={releaseDate}
+                    />
                   </div>
                   <div class="tab-pane p-3" id="notes-1" role="tabpanel">
-                    <NotesComponent />
+                    <NotesComponent
+                      handleDateChange={handleDateChange}
+                      date={date}
+                    />
                   </div>
                 </div>
               </div>

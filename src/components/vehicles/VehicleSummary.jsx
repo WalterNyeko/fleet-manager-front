@@ -3,12 +3,13 @@ import React from "react";
 export default function VehicleSummary() {
   return (
     <div className="row">
+      <hr />
       <form className="row" action="#">
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Estimated Odometer</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Location Code</label>
           <select className="browser-default custom-select">
             <option selected></option>
@@ -19,7 +20,7 @@ export default function VehicleSummary() {
             <option value="location">Location Code 5</option>
           </select>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Country</label>
           <div>
             <select className="browser-default custom-select">
@@ -32,7 +33,7 @@ export default function VehicleSummary() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Next Service</label>
           <div>
             <input
@@ -44,7 +45,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Next Inspection</label>
           <div>
             <input
@@ -56,7 +57,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Currency Codes</label>
           <div>
             <select className="browser-default custom-select">
@@ -69,7 +70,7 @@ export default function VehicleSummary() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>In pool</label>
           <div>
             <select className="browser-default custom-select">
@@ -80,7 +81,7 @@ export default function VehicleSummary() {
             </select>
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>L/100Km</label>
           <div>
             <input
@@ -92,7 +93,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Cost per Km</label>
           <div>
             <input
@@ -104,7 +105,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Total Cost</label>
           <div>
             <input
@@ -116,7 +117,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Number of Remaining Tyres</label>
           <div>
             <input
@@ -128,7 +129,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4">
+        <div className="form-group col-md-3">
           <label>Cumilative Balance</label>
           <div>
             <input
@@ -140,7 +141,7 @@ export default function VehicleSummary() {
             />
           </div>
         </div>
-        <div className="form-group col-md-4 mb-0">
+        <div className="form-group col-md-3 mb-0">
           <div>
             <button
               type="submit"

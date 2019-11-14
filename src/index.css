@@ -5,3 +5,29 @@
 .all-vehicles {
   margin-top: 80px !important;
 }
+.form-control,
+.custom-select {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+}
+.custom-select:focus {
+  box-shadow: none !important;
+}
+.app-search .form-control,
+.app-search .form-control:focus {
+  border: 1px solid #e0e0ea !important;
+  font-size: 13px !important;
+  height: 34px !important;
+  padding-left: 18px !important;
+  padding-right: 40px !important;
+  margin-right: 16px !important;
+  background: #e0e0ea !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+  width: 200px !important;
+}
+
