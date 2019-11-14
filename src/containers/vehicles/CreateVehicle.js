@@ -13,8 +13,9 @@ export default class CreateVehicle extends Component {
   };
   handleDateChange = date => this.setState({ date });
   handleLeaseEndDateChange = date => this.setState({ leaseEndDate: date });
-  handleContractStartDateChange = date =>
+  handleContractStartDateChange = (date) => {
     this.setState({ contractStartDate: date });
+  };
   handlePaymentDateChange = date => this.setState({ paymentDate: date });
   handleReleaseDateChange = date => this.setState({ releaseDate: date });
   handleWorkshopReturnDateChange = date =>
