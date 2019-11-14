@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import CreateVeichleHireComponent from "../../components/veichlehire/CreateVeichleHireRecord";
+import CreateVehicleHireRecordComponent from "../../components/veichlehire/CreateVeichleHireRecord";
 
-export default class CreateVeichleHireRecord extends Component {
+export default class CreateVehicleHireRecord extends Component {
   render() {
     return (
       <Fragment>
-        <CreateVeichleHireComponent />
+        <CreateVehicleHireRecordComponent />
       </Fragment>
     );
   }
