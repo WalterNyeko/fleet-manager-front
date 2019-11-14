@@ -1,6 +1,7 @@
 import React from "react";
 import HireInfoComponent from "./HireInfo";
 import HireDetailsComponent from "./HireDetails";
+import RentalDetailsComponent from "./RentalDetails";
 
 export default function CreateVehiclesHireRecord() {
   return (
@@ -67,7 +68,7 @@ export default function CreateVehiclesHireRecord() {
                     <HireDetailsComponent />
                   </div>
                   <div class="tab-pane p-3" id="revenue-1" role="tabpanel">
-                    {/* <VehicleBasicComponent /> */}
+                    <RentalDetailsComponent />
                   </div>
                 </div>
               </div>
