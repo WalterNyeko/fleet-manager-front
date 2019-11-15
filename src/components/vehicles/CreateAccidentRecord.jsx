@@ -6,6 +6,7 @@ import RepairInvoiceComponent from "./RepairInvoice";
 import RepairHistoryComponent from "./RepairHistory";
 import VehicleRepairsComponent from "../accidents/VehicleRepairs";
 import AccidentInfoComponent from "../accidents/AccidentInfo";
+import AccidentDescriptionComponent  from "../accidents/AccidentDescription";
 
 export default function AccidentRecord() {
   return (
@@ -129,7 +130,7 @@ export default function AccidentRecord() {
                 <span class="d-block d-sm-none">
                   <i class="far fa-user"></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Go A Head</span>
+                <span class="d-none d-sm-block">Description</span>
               </a>
             </li>
             <li class="nav-item waves-effect waves-light">
@@ -203,7 +204,7 @@ export default function AccidentRecord() {
               <AccidentInfoComponent />
             </div>
             <div class="tab-pane p-3" id="goahead" role="tabpanel">
-              {/* <RepairDescriptionComponent /> */}
+              <AccidentDescriptionComponent />
             </div>
             <div class="tab-pane p-3" id="accidentbasic" role="tabpanel">
               {/* <RepairCostComponent /> */}
