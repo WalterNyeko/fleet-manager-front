@@ -1,12 +1,7 @@
 import React from "react";
-import RepairInfoComponent from "./RepairInfo";
-import RepairDescriptionComponent from "./RepairDescription";
-import RepairCostComponent from "./RepairCost";
-import RepairInvoiceComponent from "./RepairInvoice";
-import RepairHistoryComponent from "./RepairHistory";
-import VehicleRepairsComponent from "../accidents/VehicleRepairs";
+// import RepairInfoComponent from "./RepairInfo";
 
-export default function AccidentRecord() {
+export default function RepairRecord() {
   return (
     <div class="col-lg-12">
       <div class="card">
@@ -72,43 +67,25 @@ export default function AccidentRecord() {
                 <span class="d-none d-sm-block">Service History</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
-              <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#repairrecords"
-                role="tab"
-              >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
-                </span>{" "}
-                <span class="d-none d-sm-block">Repair Records</span>
-              </a>
-            </li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active p-3" id="default" role="tabpanel">
-              <RepairInfoComponent />
+              {/* <RepairInfoComponent /> */}
             </div>
             <div class="tab-pane p-3" id="description-1" role="tabpanel">
-              <RepairDescriptionComponent />
+              {/* <RepairDescriptionComponent /> */}
             </div>
             <div class="tab-pane p-3" id="cost-1" role="tabpanel">
-              <RepairCostComponent />
+              {/* <RepairCostComponent /> */}
             </div>
             <div class="tab-pane p-3" id="invoice-1" role="tabpanel">
-              <RepairInvoiceComponent />
+              {/* <RepairInvoiceComponent /> */}
             </div>
             <div class="tab-pane p-3" id="service-1" role="tabpanel">
-            <RepairHistoryComponent />
-            </div>
-            <div class="tab-pane p-3" id="repairrecords" role="tabpanel">
-            <VehicleRepairsComponent />
+            {/* <RepairHistoryComponent /> */}
             </div>
           </div>
         </div>
-        
-        
       </div>
     </div>
   );
