@@ -17,18 +17,27 @@ export default function VehicleRepairs() {
           >
             <thead>
               <tr>
-                <th>Accident Ref.</th>
+                <th>Job Authorization No.</th>
+                <th>Workshop</th>
+                <th>Job Status</th>
                 <th>Registration No.</th>
-                <th>Accident Status</th>
                 <th>Extra Registration No.</th>
-                <th>Third Party Involved</th>
-                <th>Total Cost (Net)</th>
-                <th>Accident Date</th>
-                <th>Driver Name</th>
-                <th>Make Code</th>
                 <th>Model Code</th>
                 <th>Division/Client</th>
-                <th>Comment</th>
+                <th>Cost Center</th>
+                <th>Odometer In</th>
+                <th>Reason</th>
+                <th>Job Date</th>
+                <th>Job End Date</th>
+                <th>Invoice</th>
+                <th>Total Invoice</th>
+                <th>Comments</th>
+                <th>Paperwork Status</th>
+                <th>Cost Labour</th>
+                <th>Created By</th>
+                <th>Date</th>
+                <th>Changed By</th>
+                <th>Date</th>
               </tr>
             </thead>
             <tbody>
