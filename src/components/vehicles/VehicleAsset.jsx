@@ -4,7 +4,15 @@ export default function VehicleAsset() {
   return (
     <div className="row">
       <form className="row" action="#">
-        <div className="form-group col-md-4">
+        
+
+
+
+      <div className="card my-card">
+        <div className="card-body">
+          <div className="card-title">
+            <div className="row">
+            <div className="form-group col-md-4">
           <label>Registration No.</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
@@ -44,7 +52,8 @@ export default function VehicleAsset() {
           <label>Driver Name</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
-        <div className="form-group col-md-4 mb-0">
+            </div>
+            <div className="form-group col-md-4 mb-0">
           <div>
             <button
               type="submit"
@@ -57,6 +66,14 @@ export default function VehicleAsset() {
             </button>
           </div>
         </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+        
       </form>
     </div>
   );
