@@ -10,13 +10,15 @@ const CreateVehicle = ({
 }) => {
   return (
     <div className="row">
-      <hr />
       <form className="row" action="#">
-        <div className="form-group col-md-3">
+      <div className="card col-md-12 my-card mr-1">
+          <div className="card-body custom-card">
+            <div className="row">
+        <div className="form-group col-md-4">
           <label>Registration No.</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Fleet Number</label>
           <div>
             <input
@@ -28,12 +30,12 @@ const CreateVehicle = ({
             />
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Vehicle Tyre</label>
           <div>
             <select className="browser-default custom-select">
               <option selected></option>
-              <option selected>Car</option>
+              <option select>Car</option>
               <option value="type">Chassis Cabine</option>
               <option value="type">Forklift</option>
               <option value="type">Locomotive</option>
@@ -47,7 +49,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Extra Registration No.</label>
           <div>
             <input
@@ -59,7 +61,7 @@ const CreateVehicle = ({
             />
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Vehicle Status</label>
           <div>
             <select className="browser-default custom-select">
@@ -74,7 +76,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Body Type</label>
           <div>
             <select className="browser-default custom-select">
@@ -89,7 +91,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Returned to Workshop</label>
           <div>
             <select className="browser-default custom-select">
@@ -102,7 +104,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Date Returned to Workshop</label>
           <div>
             <DatePicker
@@ -112,7 +114,7 @@ const CreateVehicle = ({
             />
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Make Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -125,7 +127,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Model Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -138,7 +140,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Company Code</label>
           <div>
             <select className="browser-default custom-select">
@@ -151,10 +153,11 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Fuel Type</label>
           <div>
             <select className="browser-default custom-select">
+            <option value="fuel"></option>
               <option value="fuel">Petrol</option>
               <option value="fuel">Compressed Natural Gas @ 2400PSI</option>
               <option value="fuel">Diesel</option>
@@ -165,7 +168,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>County</label>
           <div>
             <select className="browser-default custom-select">
@@ -178,7 +181,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Date Registered</label>
           <div>
             <DatePicker
@@ -188,7 +191,7 @@ const CreateVehicle = ({
             />
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Cost Center</label>
           <div>
             <select className="browser-default custom-select">
@@ -201,7 +204,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Year</label>
           <div>
             <input
@@ -213,7 +216,7 @@ const CreateVehicle = ({
             />
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Division/Client</label>
           <div>
             <select className="browser-default custom-select">
@@ -226,7 +229,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Conversion Type</label>
           <div>
             <select className="browser-default custom-select">
@@ -245,7 +248,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3">
+        <div className="form-group col-md-4">
           <label>Deriviate</label>
           <div>
             <select className="browser-default custom-select">
@@ -253,7 +256,7 @@ const CreateVehicle = ({
             </select>
           </div>
         </div>
-        <div className="form-group col-md-3 mb-0">
+        <div className="form-group col-md-4 mb-0">
           <div>
             <button
               type="submit"
@@ -265,6 +268,9 @@ const CreateVehicle = ({
               Cancel
             </button>
           </div>
+        </div>
+        </div>
+        </div>
         </div>
       </form>
     </div>
