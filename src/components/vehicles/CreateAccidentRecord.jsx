@@ -10,6 +10,7 @@ import AccidentDescriptionComponent from "../accidents/AccidentDescription";
 import AccidentBasicComponent from "../accidents/AccidentBasic";
 import AccidentDetailsComponent from "../accidents/AccidentDetails";
 import AccidentVorComponent from "../accidents/AccidentVor";
+import AccidentCostComponent from "../accidents/AccidentCosts";
 
 export default function AccidentRecord() {
   return (
@@ -219,7 +220,7 @@ export default function AccidentRecord() {
               <AccidentVorComponent />
             </div>
             <div class="tab-pane p-3" id="accidentcosts" role="tabpanel">
-              {/* <VehicleRepairsComponent /> */}
+              <AccidentCostComponent />
             </div>
             <div class="tab-pane p-3" id="accidentrecords" role="tabpanel">
               {/* <VehicleRepairsComponent /> */}
