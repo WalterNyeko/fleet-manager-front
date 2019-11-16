@@ -3,7 +3,7 @@ import React from "react";
 export default function AllMarkedVeichlesAssets() {
   return (
     <div className="row all-vehicles">
-      <div className="col-md-2"></div>
+      {/* <div className="col-md-2"></div>
       <div className="col-md-10">
         <div class="row">
           <div class="col-12">
@@ -721,7 +721,7 @@ export default function AllMarkedVeichlesAssets() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
