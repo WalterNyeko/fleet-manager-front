@@ -191,6 +191,12 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/createvehicleasset">
                   New Vehicle Asset
                 </NavLink>
+                <NavLink className="dropdown-item" to="/createvehicletyres">
+                  New Tyre
+                </NavLink>
+                <NavLink className="dropdown-item" to="/createfuelexpense">
+                  New Fuel Expense Record
+                </NavLink>
                 <NavLink className="dropdown-item" to="/createvehicledefects">
                   New Defects Record
                 </NavLink>{" "}
@@ -208,12 +214,6 @@ export default function TopNav() {
                 </NavLink>
                 <NavLink className="dropdown-item" to="/createinvoice">
                   New Purchase Order
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicletyres">
-                  New Tyres
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createfuelexpense">
-                  New Fuel Expense Record
                 </NavLink>
                 <NavLink
                   className="dropdown-item"
