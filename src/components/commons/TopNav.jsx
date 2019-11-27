@@ -188,47 +188,11 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/vehiclesoffraod">
                   New Vehicle Off Road
                 </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicleasset">
-                  New Vehicle Asset
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicletyres">
-                  New Tyre
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createfuelexpense">
-                  New Fuel Expense Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicledefects">
-                  New Defects Record
-                </NavLink>{" "}
-                <NavLink className="dropdown-item" to="/">
-                  New Accident
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createcostingincured">
-                  New Costing Incurred
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createmaintenacerecord">
-                  New Maintenance Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createpullcarincidence">
-                  New Pullcar Incidence
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createstockrecord">
-                  New Stock Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createinvoice">
-                  New Purchase Order
-                </NavLink>
                 <NavLink
                   className="dropdown-item"
                   to="/createcustomerrelations"
                 >
                   New Customer Relations
-                </NavLink>
-                <NavLink
-                  className="dropdown-item"
-                  to="/createinsurancecertificate"
-                >
-                  New Insurance Certificate
                 </NavLink>
               </div>
             </div>
