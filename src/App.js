@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { HashRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router";
+import { Provider } from "react-redux";
 import Login from "./containers/auth/Login";
 import Registration from "./containers/registration/Registration";
 import SideBar from "./containers/commons/SideBar";
@@ -36,115 +37,130 @@ import AllManagementReports from "./containers/managementreports/AllManagementRe
 import VehiclesOffRoad from "./containers/vehiclesOffRoad/VehicleOffRoad";
 import CreateCustomerRelations from "./containers/customerrelations/CreateCustomerRelations";
 import CreateInsuaranceCertificate from "./containers/insurancecertificate/CreateInsuranceCertificate";
+import store from "./redux/store/store";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
-          <TopNav />
-          <SideBar />
-          <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/register" exact component={Registration} />
-            <Route path="/forgotpassword" exact component={ForgotPassword} />
-            <Route path="/createvehicle" exact component={CreateVehicle} />
-            <Route
-              path="/createveichlehire"
-              exact
-              component={CreateVeichleHireRecord}
-            />
-            <Route
-              path="/createfuelexpense"
-              exact
-              component={CreateFuelExpenseRecord}
-            />
-            <Route
-              path="/createinvoice"
-              exact
-              component={CreateInvoiceRecord}
-            />
-            <Route
-              path="/createaccidentrecord"
-              exact
-              component={CreateAccidentRecord}
-            />
-            <Route
-              path="/createcostingincured"
-              exact
-              component={CreateCostingIncuredRecord}
-            />
-            <Route
-              path="/createpullcarincidence"
-              exact
-              component={CreatePullCar}
-            />
-            <Route
-              path="/createmaintenacerecord"
-              exact
-              component={CreateMaintenanceRecord}
-            />
-            <Route
-              path="/createvehicledefects"
-              exact
-              component={AddVehicleDefects}
-            />
-            <Route
-              path="/createstockrecord"
-              exact
-              component={CreateStockRecord}
-            />
-            <Route path="/createvehicletyres" exact component={VehicleTyres} />
-            <Route path="/allvehicles" exact component={AllVehicles} />
-            <Route path="/allveichleshire" exact component={AllVehiclesHire} />
-            <Route
-              path="/allveichlesoffroad"
-              exact
-              component={AllVehiclesOffRoad}
-            />
-            <Route
-              path="/allmarkedveichlesassets"
-              exact
-              component={AllMarkedVehiclesAssets}
-            />
-            <Route path="/alltyres" exact component={AllTyres} />
-            <Route path="/allfuel" exact component={AllFuel} />
-            <Route path="/alldefects" exact component={AllDefects} />
-            <Route path="/allaccidents" exact component={AllAccidents} />
-            <Route path="/allmaintenance" exact component={AllMaintenance} />
-            <Route path="/allpullcar" exact component={AllPullcar} />
-            <Route path="/allcosting" exact component={AllCosting} />
-            <Route path="/allpurchase" exact component={AllPurchase} />
-            <Route path="/allstock" exact component={AllStock} />
-            <Route
-              path="/allcustomerrelations"
-              exact
-              component={AllCustomerRelations}
-            />
-            <Route
-              path="/allinsurancecertificates"
-              exact
-              component={AllInsuranceCertificate}
-            />
-            <Route
-              path="/allmanagementreports"
-              exact
-              component={AllManagementReports}
-            />
-            <Route path="/vehiclesoffraod" exact component={VehiclesOffRoad} />
-            <Route
-              path="/createcustomerrelations"
-              exact
-              component={CreateCustomerRelations}
-            />
-            <Route
-              path="/createinsurancecertificate"
-              exact
-              component={CreateInsuaranceCertificate}
-            />
-          </Switch>
-        </Router>
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <Router>
+            <TopNav />
+            <SideBar />
+            <Switch>
+              <Route path="/" exact component={Login} />
+              <Route path="/register" exact component={Registration} />
+              <Route path="/forgotpassword" exact component={ForgotPassword} />
+              <Route path="/createvehicle" exact component={CreateVehicle} />
+              <Route
+                path="/createveichlehire"
+                exact
+                component={CreateVeichleHireRecord}
+              />
+              <Route
+                path="/createfuelexpense"
+                exact
+                component={CreateFuelExpenseRecord}
+              />
+              <Route
+                path="/createinvoice"
+                exact
+                component={CreateInvoiceRecord}
+              />
+              <Route
+                path="/createaccidentrecord"
+                exact
+                component={CreateAccidentRecord}
+              />
+              <Route
+                path="/createcostingincured"
+                exact
+                component={CreateCostingIncuredRecord}
+              />
+              <Route
+                path="/createpullcarincidence"
+                exact
+                component={CreatePullCar}
+              />
+              <Route
+                path="/createmaintenacerecord"
+                exact
+                component={CreateMaintenanceRecord}
+              />
+              <Route
+                path="/createvehicledefects"
+                exact
+                component={AddVehicleDefects}
+              />
+              <Route
+                path="/createstockrecord"
+                exact
+                component={CreateStockRecord}
+              />
+              <Route
+                path="/createvehicletyres"
+                exact
+                component={VehicleTyres}
+              />
+              <Route path="/allvehicles" exact component={AllVehicles} />
+              <Route
+                path="/allveichleshire"
+                exact
+                component={AllVehiclesHire}
+              />
+              <Route
+                path="/allveichlesoffroad"
+                exact
+                component={AllVehiclesOffRoad}
+              />
+              <Route
+                path="/allmarkedveichlesassets"
+                exact
+                component={AllMarkedVehiclesAssets}
+              />
+              <Route path="/alltyres" exact component={AllTyres} />
+              <Route path="/allfuel" exact component={AllFuel} />
+              <Route path="/alldefects" exact component={AllDefects} />
+              <Route path="/allaccidents" exact component={AllAccidents} />
+              <Route path="/allmaintenance" exact component={AllMaintenance} />
+              <Route path="/allpullcar" exact component={AllPullcar} />
+              <Route path="/allcosting" exact component={AllCosting} />
+              <Route path="/allpurchase" exact component={AllPurchase} />
+              <Route path="/allstock" exact component={AllStock} />
+              <Route
+                path="/allcustomerrelations"
+                exact
+                component={AllCustomerRelations}
+              />
+              <Route
+                path="/allinsurancecertificates"
+                exact
+                component={AllInsuranceCertificate}
+              />
+              <Route
+                path="/allmanagementreports"
+                exact
+                component={AllManagementReports}
+              />
+              <Route
+                path="/vehiclesoffraod"
+                exact
+                component={VehiclesOffRoad}
+              />
+              <Route
+                path="/createcustomerrelations"
+                exact
+                component={CreateCustomerRelations}
+              />
+              <Route
+                path="/createinsurancecertificate"
+                exact
+                component={CreateInsuaranceCertificate}
+              />
+            </Switch>
+          </Router>
+        </div>
+      </Provider>
     );
   }
 }

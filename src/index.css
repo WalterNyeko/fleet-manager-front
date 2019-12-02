@@ -30,4 +30,10 @@
   border-radius: 30px !important;
   width: 200px !important;
 }
-
+.custom-card {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.my-card {
+  border: 1px solid #ced4da;
+}

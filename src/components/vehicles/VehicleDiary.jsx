@@ -4,13 +4,33 @@ export default function VehicleDiary() {
   return (
     <div className="row">
       <form className="row" action="#">
-        <div className="form-group col-md-4">
-          <label>Warranty</label>{" "}
-          <input type="text" className="form-control" required placeholder="" />
-        </div>
-        <div className="form-group col-md-4">
-          <label>Warranty Distance</label>{" "}
-          <input type="text" className="form-control" required placeholder="" />
+        <div className="card col-md-4 my-card">
+          <div className="card-body custom-card">
+            <div className="card-title">
+              <span className="text-dark h5">Warranty Data</span>
+            </div>
+            <hr />
+            <div className="row">
+              <div className="form-group col-md-6">
+                <label>Warranty</label>{" "}
+                <input
+                  type="text"
+                  className="form-control"
+                  required
+                  placeholder=""
+                />
+              </div>
+              <div className="form-group col-md-6">
+                <label>Warranty Distance</label>{" "}
+                <input
+                  type="text"
+                  className="form-control"
+                  required
+                  placeholder=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="form-group col-md-4">
           <label>Insurance Company</label>
