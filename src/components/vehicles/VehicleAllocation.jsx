@@ -4,7 +4,12 @@ export default function VehicleAllocation() {
   return (
     <div className="row">
       <form className="row" action="#">
-        <div className="form-group col-md-4">
+       
+    <div className="card my-card">
+      <div className="card-body">
+        <div className="card-title">
+          <div className="row">
+          <div className="form-group col-md-4">
           <label>Driver Name</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
@@ -56,6 +61,7 @@ export default function VehicleAllocation() {
           <label>Allocation Reason</label>{" "}
           <input type="text" className="form-control" required placeholder="" />
         </div>
+
         <div className="form-group col-md-4 mb-0">
           <div>
             <button
@@ -69,6 +75,14 @@ export default function VehicleAllocation() {
             </button>
           </div>
         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+        
       </form>
     </div>
   );

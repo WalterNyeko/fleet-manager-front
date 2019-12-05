@@ -143,10 +143,10 @@ export default function TopNav() {
                 <a className="dropdown-item" href="/home">
                   <i className="mdi mdi-wallet m-r-5"></i> My Account
                 </a>{" "}
-                <a className="dropdown-item d-block" href="/home">
+                <NavLink className="dropdown-item d-block" to="/settings">
                   <span className="badge badge-success float-right">11</span>
                   <i className="mdi mdi-settings m-r-5"></i> Settings
-                </a>{" "}
+                </NavLink>{" "}
                 <a className="dropdown-item" href="/home">
                   <i className="mdi mdi-lock-open-outline m-r-5"></i> Lock
                   screen
@@ -188,38 +188,11 @@ export default function TopNav() {
                 <NavLink className="dropdown-item" to="/vehiclesoffraod">
                   New Vehicle Off Road
                 </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicledefects">
-                  New Defects Record
-                </NavLink>{" "}
-                <NavLink className="dropdown-item" to="/createaccidentrecord">
-                  New Accident Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createcostingincured">
-                  New Costing Incurred
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createmaintenacerecord">
-                  New Maintenance Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createpullcarincidence">
-                  New Pullcar Incidence
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createstockrecord">
-                  New Stock Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createinvoice">
-                  New Purchase Order
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createvehicletyres">
-                  New Tyres
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createfuelexpense">
-                  New Fuel Expense Record
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createcustomerrelations">
+                <NavLink
+                  className="dropdown-item"
+                  to="/createcustomerrelations"
+                >
                   New Customer Relations
-                </NavLink>
-                <NavLink className="dropdown-item" to="/createinsurancecertificate">
-                  New Insurance Certificate
                 </NavLink>
               </div>
             </div>

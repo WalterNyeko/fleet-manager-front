@@ -34,9 +34,9 @@ import AllStock from "./containers/stock/AllStock";
 import AllCustomerRelations from "./containers/customerrelations/AllCustomerRelations";
 import AllInsuranceCertificate from "./containers/insurancecertificate/AllInsuranceCertificate";
 import AllManagementReports from "./containers/managementreports/AllManagementReports";
-import VehiclesOffRoad from "./containers/vehiclesOffRoad/VehicleOffRoad";
 import CreateCustomerRelations from "./containers/customerrelations/CreateCustomerRelations";
 import CreateInsuaranceCertificate from "./containers/insurancecertificate/CreateInsuranceCertificate";
+import Settings from "./containers/settings/Settings";
 import store from "./redux/store/store";
 
 class App extends Component {
@@ -143,11 +143,6 @@ class App extends Component {
                 component={AllManagementReports}
               />
               <Route
-                path="/vehiclesoffraod"
-                exact
-                component={VehiclesOffRoad}
-              />
-              <Route
                 path="/createcustomerrelations"
                 exact
                 component={CreateCustomerRelations}
@@ -157,6 +152,7 @@ class App extends Component {
                 exact
                 component={CreateInsuaranceCertificate}
               />
+              <Route path="/settings" exact component={Settings} />
             </Switch>
           </Router>
         </div>
