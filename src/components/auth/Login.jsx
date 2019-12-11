@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Home = ({ handleSubmit }) => {
+const Home = ({ handleSubmit, onChangeHandler, username, password }) => {
   return (
     <div>
       <div className="wrapper-page">
@@ -27,6 +27,9 @@ const Home = ({ handleSubmit }) => {
                   className="form-control"
                   id="username"
                   placeholder="Enter username"
+                  name="username"
+                  value={username}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div className="form-group">
@@ -36,6 +39,9 @@ const Home = ({ handleSubmit }) => {
                   className="form-control"
                   id="userpassword"
                   placeholder="Enter password"
+                  name="password"
+                  value={password}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div className="form-group row m-t-20">
@@ -66,13 +72,9 @@ const Home = ({ handleSubmit }) => {
               </div>
               <div className="form-group m-t-10 mb-0 row">
                 <div className="col-12 m-t-20">
-
-                  
                   <NavLink to="/forgotpassword" className="mdi mdi-lock">
                     Forgot your password?
                   </NavLink>
-
-
                 </div>
               </div>
             </form>
@@ -86,8 +88,7 @@ const Home = ({ handleSubmit }) => {
             </NavLink>
           </p>
 
-          <NavLink to="/login" className="font-500 text-primary">
-           </NavLink>
+          <NavLink to="/login" className="font-500 text-primary"></NavLink>
           <p>
             © 2019 SoftEarth Technologies, Inc. Crafted with{" "}
             <i className="mdi mdi-heart text-danger"></i> by Fleet Lovers

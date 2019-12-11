@@ -34,6 +34,8 @@ export const showErrorNotification = message => {
   notification.error(data);
 };
 
+export const baseURL = "http://127.0.0.1:8000/";
+
 // export const validateEmail = email => {
 //   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 //   const result = re.test(String(email).toLowerCase());
