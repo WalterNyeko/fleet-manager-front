@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Register = ({ handleSubmit }) => {
+const Register = ({ handleSubmit, onChangeHandler, username, password }) => {
   return (
     <div>
       <div className="wrapper-page">
@@ -21,21 +21,15 @@ const Register = ({ handleSubmit }) => {
               action="https://themesbrand.com/veltrix/layouts/vertical/index.html"
             >
               <div className="form-group">
-                <label htmlFor="useremail">Email</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="useremail"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div className="form-group">
                 <label htmlFor="username">Username</label>
                 <input
                   type="text"
                   className="form-control"
                   id="username"
                   placeholder="Enter username"
+                  name="username"
+                  value={username}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div className="form-group">
@@ -45,6 +39,9 @@ const Register = ({ handleSubmit }) => {
                   className="form-control"
                   id="userpassword"
                   placeholder="Enter password"
+                  name="password"
+                  value={password}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div className="form-group row m-t-20">

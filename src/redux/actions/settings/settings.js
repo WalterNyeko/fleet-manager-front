@@ -9,7 +9,8 @@ export const addSettings = (settingsData, settings) => dispatch => {
   fetch(url, {
     method: "POST",
     headers: {
-      "content-type": "application/json"
+      "content-type": "application/json",
+      authorization: `Token ${localStorage.getItem("fm-token")}`
     },
     body: JSON.stringify(settingsData)
   })

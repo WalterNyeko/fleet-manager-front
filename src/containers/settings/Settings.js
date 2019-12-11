@@ -29,6 +29,12 @@ class Settings extends Component {
         name: "Vehicle Body Type",
         dbColumn: "body_type_name",
         urlTag: "vehiclebodytypes"
+      },
+      {
+        id: 5,
+        name: "Vehicle Modal Code",
+        dbColumn: "model_code_name",
+        urlTag: "vehiclemodelcode"
       }
     ],
     selectedSettingsItem: "",
@@ -38,7 +44,6 @@ class Settings extends Component {
   onChange = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    console.log(this.state);
   };
 
   handleSubmit = () => {
@@ -51,7 +56,6 @@ class Settings extends Component {
     const data = {
       [dbColumn]: settingsValue
     };
-    console.log(data);
     addSettings(data, urlTag);
   };
 
