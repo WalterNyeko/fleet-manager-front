@@ -26,6 +26,11 @@ class CreateVehicle extends Component {
     this.props.fetchSettings("vehiclecostcenter");
     this.props.fetchSettings("vehicleclient");
     this.props.fetchSettings("vehicleconventiontype");
+    this.props.fetchSettings("vehiclelocationcode");
+    this.props.fetchSettings("vehiclecountry");
+    this.props.fetchSettings("vehiclecurrencycodes");
+    this.props.fetchSettings("vehicleinpull");
+    
   }
   handleDateChange = date => this.setState({ date });
   handleLeaseEndDateChange = date => this.setState({ leaseEndDate: date });

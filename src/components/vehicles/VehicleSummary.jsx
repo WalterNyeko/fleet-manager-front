@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function VehicleSummary() {
+const VehicleSummary = ({
+  mySettings: {
+    vehiclelocationcode,
+    vehiclecountry,
+    vehiclecurrencycodes,
+    vehicleinpull
+  }
+}) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -21,24 +28,28 @@ export default function VehicleSummary() {
               <div className="form-group col-md-4">
                 <label>Location Code</label>
                 <select className="browser-default custom-select">
-                  <option selected></option>
-                  <option value="location">Location Code 1</option>
-                  <option value="location">Location Code 2</option>
-                  <option value="location">Location Code 3</option>
-                  <option value="location">Location Code 4</option>
-                  <option value="location">Location Code 5</option>
+                  <option value="location" selected>
+                    Select Vehicle Location Code
+                  </option>
+                  {vehiclelocationcode &&
+                    vehiclelocationcode.length &&
+                    vehiclelocationcode.map(({ location_code_name }) => (
+                      <option value="location">{location_code_name}</option>
+                    ))}
                 </select>
               </div>
               <div className="form-group col-md-4">
                 <label>Country</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option selected></option>
-                    <option value="country">Country 1</option>
-                    <option value="country">Country 2</option>
-                    <option value="country">Country 3</option>
-                    <option value="country">Country 4</option>
-                    <option value="country">Country 5</option>
+                    <option value="country" selected>
+                      Select Vehicle Country
+                    </option>
+                    {vehiclecountry &&
+                      vehiclecountry.length &&
+                      vehiclecountry.map(({ country_name }) => (
+                        <option value="country">{country_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
@@ -70,23 +81,29 @@ export default function VehicleSummary() {
                 <label>Currency Codes</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="currency"></option>
-                    <option value="currency">Currency 1</option>
-                    <option value="currency">Currency 2</option>
-                    <option value="currency">Currency 3</option>
-                    <option value="currency">Currency 4</option>
-                    <option value="currency">Currency 5</option>
+                    <option value="currency" selected>
+                      Select Vehicle Currency Code
+                    </option>
+                    {vehiclecurrencycodes &&
+                      vehiclecurrencycodes.length &&
+                      vehiclecurrencycodes.map(({ currency_codes_name }) => (
+                        <option value="currency">{currency_codes_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
               <div className="form-group col-md-4">
-                <label>In pool</label>
+                <label>In Pull</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="pool"></option>
-                    <option value="pool">No</option>
-                    <option value="pool">Yes</option>
-                    <option value="pool">Local Pool Use Only</option>
+                    <option value="inpull" selected>
+                      Select Vehicle In Pull
+                    </option>
+                    {vehicleinpull &&
+                      vehicleinpull.length &&
+                      vehicleinpull.map(({ in_pull_name }) => (
+                        <option value="inpull">{in_pull_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
@@ -172,4 +189,5 @@ export default function VehicleSummary() {
       </form>
     </div>
   );
-}
+};
+export default VehicleSummary;

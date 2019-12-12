@@ -19,7 +19,7 @@ const CreateVehicle = ({
     vehiclecounty,
     vehiclecostcenter,
     vehicleclient,
-    vehicleconventiontype
+    vehicleconventiontype,
   }
 }) => {
   return (

@@ -8,6 +8,7 @@ import SideBar from "./containers/commons/SideBar";
 import TopNav from "./containers/commons/TopNav";
 import ForgotPassword from "./containers/forgotPassword/ForgotPassword";
 import CreateVehicle from "./containers/vehicles/CreateVehicle";
+import VehicleOffRoad from "./containers/vehiclesOffRoad/VehicleOffRoad";
 import AddVehicleDefects from "./containers/vehicledefects/AddVehicleDefects";
 import CreateAccidentRecord from "./containers/vehicles/CreateAccidentRecord";
 import CreateCostingIncuredRecord from "./containers/costingIncured/CreateCostingIncuredRecord";
@@ -152,6 +153,7 @@ class App extends Component {
                 exact
                 component={CreateInsuaranceCertificate}
               />
+              <Route path="/vehiclesoffraod" exact component={VehicleOffRoad} />
               <Route path="/settings" exact component={Settings} />
             </Switch>
           </Router>

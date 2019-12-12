@@ -72,13 +72,37 @@ class Settings extends Component {
         dbColumn: "client_name",
         urlTag: "vehicleclient"
       },
-
       {
         id: 12,
         name: "Vehicle Convention Type",
         dbColumn: "convention_type_name",
         urlTag: "vehicleconventiontype"
+      },
+      {
+        id: 13,
+        name: "Vehicle Location Code",
+        dbColumn: "location_code_name",
+        urlTag: "vehiclelocationcode"
+      },
+      {
+        id: 14,
+        name: "Vehicle Country",
+        dbColumn: "country_name",
+        urlTag: "vehiclecountry"
+      },
+      {
+        id: 15,
+        name: "Vehicle Currency Code",
+        dbColumn: "currency_codes_name",
+        urlTag: "vehiclecurrencycodes"
+      },
+      {
+        id: 16,
+        name: "Vehicle In Pull",
+        dbColumn: "in_pull_name",
+        urlTag: "vehicleinpull"
       }
+      
     ],
     selectedSettingsItem: "",
     settingsValue: ""

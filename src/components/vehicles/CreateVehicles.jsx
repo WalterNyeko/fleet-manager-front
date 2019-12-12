@@ -187,7 +187,7 @@ export default function CreateVehicles({
                     />
                   </div>
                   <div class="tab-pane p-3" id="summary-1" role="tabpanel">
-                    <VehicleSummaryComponent />
+                    <VehicleSummaryComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="basic-1" role="tabpanel">
                     <VehicleBasicComponent />
