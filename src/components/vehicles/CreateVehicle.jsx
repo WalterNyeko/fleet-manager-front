@@ -277,14 +277,7 @@ const CreateVehicle = ({
                   </select>
                 </div>
               </div>
-              <div className="form-group col-md-4">
-                <label>Deriviate</label>
-                <div>
-                  <select className="browser-default custom-select">
-                    <option value="conversion"></option>
-                  </select>
-                </div>
-              </div>
+
               <div className="form-group col-md-4 mb-0">
                 <div>
                   <button
