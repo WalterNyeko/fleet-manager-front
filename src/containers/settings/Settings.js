@@ -35,6 +35,18 @@ class Settings extends Component {
         name: "Vehicle Modal Code",
         dbColumn: "model_code_name",
         urlTag: "vehiclemodelcode"
+      },
+      {
+        id: 6,
+        name: "Vehicle Make Code",
+        dbColumn: "make_code_name",
+        urlTag: "vehiclemakecode"
+      },
+      {
+        id: 7,
+        name: "Vehicle Company Code",
+        dbColumn: "company_code_name",
+        urlTag: "vehiclecompanycode"
       }
     ],
     selectedSettingsItem: "",

@@ -24,7 +24,8 @@ export default function CreateVehicles({
   leaseEndDate,
   workshopReturnDate,
   registrationDate,
-  date
+  date,
+  mySettings
 }) {
   return (
     <div className="row">
@@ -182,6 +183,7 @@ export default function CreateVehicles({
                       }
                       workshopReturnDate={workshopReturnDate}
                       registrationDate={registrationDate}
+                      mySettings={mySettings}
                     />
                   </div>
                   <div class="tab-pane p-3" id="summary-1" role="tabpanel">
