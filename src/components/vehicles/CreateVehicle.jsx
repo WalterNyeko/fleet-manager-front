@@ -17,7 +17,8 @@ const CreateVehicle = ({
     vehiclecompanycode,
     vehiclefueltype,
     vehiclecounty,
-    vehiclecostcenter
+    vehiclecostcenter,
+    vehicleclient
   }
 }) => {
   return (
@@ -247,12 +248,14 @@ const CreateVehicle = ({
                 <label>Division/Client</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="division"></option>
-                    <option value="division">Division 1</option>
-                    <option value="division">Division 2</option>
-                    <option value="division">Division 3</option>
-                    <option value="division">Division 4</option>
-                    <option value="division">Division 5</option>
+                    <option value="division" selected>
+                      Select Vehicle Division/Client
+                    </option>
+                    {vehicleclient &&
+                      vehicleclient.length &&
+                      vehicleclient.map(({ client_name }) => (
+                        <option value="division">{client_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>

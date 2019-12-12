@@ -65,6 +65,12 @@ class Settings extends Component {
         name: "Vehicle Cost Center",
         dbColumn: "cost_center_name",
         urlTag: "vehiclecostcenter"
+      },
+      {
+        id: 11,
+        name: "Vehicle Client",
+        dbColumn: "client_name",
+        urlTag: "vehicleclient"
       }
     ],
     selectedSettingsItem: "",
