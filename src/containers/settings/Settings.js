@@ -83,6 +83,12 @@ class Settings extends Component {
         name: "Vehicle Location Code",
         dbColumn: "location_code_name",
         urlTag: "vehiclelocationcode"
+      },
+      {
+        id: 14,
+        name: "Vehicle Country",
+        dbColumn: "country_name",
+        urlTag: "vehiclecountry"
       }
     ],
     selectedSettingsItem: "",

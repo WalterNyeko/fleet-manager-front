@@ -1,6 +1,8 @@
 import React from "react";
 
-const VehicleSummary = ({ mySettings: { vehiclelocationcode } }) => {
+const VehicleSummary = ({
+  mySettings: { vehiclelocationcode, vehiclecountry }
+}) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -35,12 +37,14 @@ const VehicleSummary = ({ mySettings: { vehiclelocationcode } }) => {
                 <label>Country</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option selected></option>
-                    <option value="country">Country 1</option>
-                    <option value="country">Country 2</option>
-                    <option value="country">Country 3</option>
-                    <option value="country">Country 4</option>
-                    <option value="country">Country 5</option>
+                    <option value="country" selected>
+                      Select Vehicle Country
+                    </option>
+                    {vehiclecountry &&
+                      vehiclecountry.length &&
+                      vehiclecountry.map(({ country_name }) => (
+                        <option value="country">{country_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
