@@ -113,6 +113,12 @@ class Settings extends Component {
         name: "Vehicle Deducability",
         dbColumn: "deductability_name",
         urlTag: "vehicledeductability"
+      },
+      {
+        id: 19,
+        name: "Vehicle Insurance Company",
+        dbColumn: "insurance_company_name",
+        urlTag: "vehicleinsurancecompany"
       }
 
       

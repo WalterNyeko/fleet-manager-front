@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function VehicleDiary() {
+const VehicleDiary = ({ mySettings: { vehicleinsurancecompany } }) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -35,12 +35,14 @@ export default function VehicleDiary() {
         <div className="form-group col-md-4">
           <label>Insurance Company</label>
           <select className="browser-default custom-select">
-            <option selected></option>
-            <option value="insurance">Insurance Company 1</option>
-            <option value="insurance">Insurance Company 2</option>
-            <option value="insurance">Insurance Company 3</option>
-            <option value="insurance">Insurance Company 4</option>
-            <option value="insurance">Insurance Company 5</option>
+            <option value="insurance" selected>
+              Select Vehicle Insurance Company
+            </option>
+            {vehicleinsurancecompany &&
+              vehicleinsurancecompany.length &&
+              vehicleinsurancecompany.map(({ insurance_company_name }) => (
+                <option value="insurance">{insurance_company_name}</option>
+              ))}
           </select>
         </div>
         <div className="form-group col-md-4">
@@ -132,12 +134,18 @@ export default function VehicleDiary() {
               <div className="form-group col-md-4">
                 <label>Insurance Company</label>
                 <select className="browser-default custom-select">
-                  <option selected></option>
-                  <option value="insurance">Insurance Company 1</option>
-                  <option value="insurance">Insurance Company 2</option>
-                  <option value="insurance">Insurance Company 3</option>
-                  <option value="insurance">Insurance Company 4</option>
-                  <option value="insurance">Insurance Company 5</option>
+                  <option value="insurance" selected>
+                    Select Vehicle Insurance Company
+                  </option>
+                  {vehicleinsurancecompany &&
+                    vehicleinsurancecompany.length &&
+                    vehicleinsurancecompany.map(
+                      ({ insurance_company_name }) => (
+                        <option value="insurance">
+                          {insurance_company_name}
+                        </option>
+                      )
+                    )}
                 </select>
               </div>
               <div className="form-group col-md-4">
@@ -415,4 +423,5 @@ export default function VehicleDiary() {
       </form>
     </div>
   );
-}
+};
+export default VehicleDiary;

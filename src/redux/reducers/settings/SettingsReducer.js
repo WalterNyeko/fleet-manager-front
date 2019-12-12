@@ -16,7 +16,8 @@ const initialState = {
   vehiclecurrencycodes: [],
   vehicleinpull: [],
   vehiclegearbox: [],
-  vehicledeductability: []
+  vehicledeductability: [],
+  vehicleinsurancecompany: []
 };
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -109,6 +110,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         vehicledeductability: action.payload
+      };
+
+    case "vehicleinsurancecompany":
+      return {
+        ...state,
+        vehicleinsurancecompany: action.payload
       };
     default:
       return state;
