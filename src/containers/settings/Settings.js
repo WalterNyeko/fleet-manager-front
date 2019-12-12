@@ -59,6 +59,12 @@ class Settings extends Component {
         name: "Vehicle County",
         dbColumn: "county_name",
         urlTag: "vehiclecounty"
+      },
+      {
+        id: 10,
+        name: "Vehicle Cost Center",
+        dbColumn: "cost_center_name",
+        urlTag: "vehiclecostcenter"
       }
     ],
     selectedSettingsItem: "",

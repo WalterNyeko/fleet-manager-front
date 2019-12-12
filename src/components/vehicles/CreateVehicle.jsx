@@ -16,7 +16,8 @@ const CreateVehicle = ({
     vehiclemodelcode,
     vehiclecompanycode,
     vehiclefueltype,
-    vehiclecounty
+    vehiclecounty,
+    vehiclecostcenter
   }
 }) => {
   return (
@@ -219,12 +220,14 @@ const CreateVehicle = ({
                 <label>Cost Center</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="costcenter"></option>
-                    <option value="costcenter">Cost Center 1</option>
-                    <option value="costcenter">Cost Center 2</option>
-                    <option value="costcenter">Cost Center 3</option>
-                    <option value="costcenter">Cost Center 4</option>
-                    <option value="costcenter">Cost Center 5</option>
+                    <option value="costcenter" selected>
+                      Select Vehicle Cost Center
+                    </option>
+                    {vehiclecostcenter &&
+                      vehiclecostcenter.length &&
+                      vehiclecostcenter.map(({ cost_center_name }) => (
+                        <option value="costcenter">{cost_center_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
