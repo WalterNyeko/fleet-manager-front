@@ -190,26 +190,26 @@ export default function CreateVehicles({
                     <VehicleSummaryComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="basic-1" role="tabpanel">
-                    <VehicleBasicComponent />
+                    <VehicleBasicComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="diary-1" role="tabpanel">
-                    <VehicleDiaryComponent />
+                    <VehicleDiaryComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="repairs-1" role="tabpanel">
-                    <AddAccidentComponent />
+                    <AddAccidentComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="allocation-1" role="tabpanel">
-                    <VehicleAllocationComponent />
+                    <VehicleAllocationComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="assets-1" role="tabpanel">
-                    <VehicleAssetComponent />
+                    <VehicleAssetComponent mySettings={mySettings} />
                   </div>
                   <div
                     class="tab-pane p-3"
                     id="majorcomponents-1"
                     role="tabpanel"
                   >
-                    <MajorComponent />
+                    <MajorComponent mySettings={mySettings} />
                   </div>
                   <div class="tab-pane p-3" id="lease-1" role="tabpanel">
                     <LeaseComponent
@@ -223,12 +223,14 @@ export default function CreateVehicles({
                       contractStartDate={contractStartDate}
                       paymentDate={paymentDate}
                       releaseDate={releaseDate}
+                      mySettings={mySettings}
                     />
                   </div>
                   <div class="tab-pane p-3" id="notes-1" role="tabpanel">
                     <NotesComponent
                       handleDateChange={handleDateChange}
                       date={date}
+                      mySettings={mySettings}
                     />
                   </div>
                 </div>

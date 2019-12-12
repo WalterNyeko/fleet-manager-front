@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function VehicleBasic() {
+const VehicleBasic = ({
+  mySettings: { vehiclegearbox, vehicledeductability }
+}) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -19,11 +21,14 @@ export default function VehicleBasic() {
               <div className="form-group col-md-4">
                 <label>Gear Box</label>
                 <select className="browser-default custom-select">
-                  <option selected></option>
-                  <option value="gear">Automatic</option>
-                  <option value="gear">CVT</option>
-                  <option value="gear">Manual</option>
-                  <option value="gear">Tiptronic</option>
+                  <option value="gear" selected>
+                    Select Vehicle Gear Box
+                  </option>
+                  {vehiclegearbox &&
+                    vehiclegearbox.length &&
+                    vehiclegearbox.map(({ gear_box_name }) => (
+                      <option value="gear">{gear_box_name}</option>
+                    ))}
                 </select>
               </div>
               <div className="form-group col-md-4">
@@ -138,15 +143,16 @@ export default function VehicleBasic() {
                 <label>CO2 Deducability</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option selected></option>
-                    <option value="country">50%</option>
-                    <option value="country">60%</option>
-                    <option value="country">70%</option>
-                    <option value="country">75%</option>
-                    <option value="country">80%</option>
-                    <option value="country">90%</option>
-                    <option value="country">100%</option>
-                    <option value="country">120%</option>
+                    <option value="deducability" selected>
+                      Select Vehicle Deducability
+                    </option>
+                    {vehicledeductability &&
+                      vehicledeductability.length &&
+                      vehicledeductability.map(({ deductability_name }) => (
+                        <option value="deducability">
+                          {deductability_name}
+                        </option>
+                      ))}
                   </select>
                 </div>
               </div>
@@ -220,4 +226,5 @@ export default function VehicleBasic() {
       </form>
     </div>
   );
-}
+};
+export default VehicleBasic;
