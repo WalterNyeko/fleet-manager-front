@@ -35,6 +35,49 @@ class Settings extends Component {
         name: "Vehicle Modal Code",
         dbColumn: "model_code_name",
         urlTag: "vehiclemodelcode"
+      },
+      {
+        id: 6,
+        name: "Vehicle Make Code",
+        dbColumn: "make_code_name",
+        urlTag: "vehiclemakecode"
+      },
+      {
+        id: 7,
+        name: "Vehicle Company Code",
+        dbColumn: "company_code_name",
+        urlTag: "vehiclecompanycode"
+      },
+      {
+        id: 8,
+        name: "Vehicle Fuel Type",
+        dbColumn: "fuel_type_name",
+        urlTag: "vehiclefueltype"
+      },
+      {
+        id: 9,
+        name: "Vehicle County",
+        dbColumn: "county_name",
+        urlTag: "vehiclecounty"
+      },
+      {
+        id: 10,
+        name: "Vehicle Cost Center",
+        dbColumn: "cost_center_name",
+        urlTag: "vehiclecostcenter"
+      },
+      {
+        id: 11,
+        name: "Vehicle Client",
+        dbColumn: "client_name",
+        urlTag: "vehicleclient"
+      },
+
+      {
+        id: 12,
+        name: "Vehicle Convention Type",
+        dbColumn: "convention_type_name",
+        urlTag: "vehicleconventiontype"
       }
     ],
     selectedSettingsItem: "",

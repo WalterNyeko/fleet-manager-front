@@ -1,11 +1,11 @@
 import {
   showErrorNotification,
-  showSuccessNotification
+  showSuccessNotification,
+  baseURL
 } from "../../../helpers";
 
 export const addSettings = (settingsData, settings) => dispatch => {
-  console.log(settings, settingsData);
-  const url = `http://127.0.0.1:8000/${settings}/`;
+  const url = `${baseURL}${settings}/`;
   fetch(url, {
     method: "POST",
     headers: {
@@ -21,6 +21,26 @@ export const addSettings = (settingsData, settings) => dispatch => {
       } else {
         showSuccessNotification("Successfully added the settings");
       }
+    })
+    .catch(error => {})
+    .finally(done => {});
+};
+
+export const fetchSettings = settings => dispatch => {
+  const url = `${baseURL}${settings}/`;
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Token ${localStorage.getItem("fm-token")}`
+    }
+  })
+    .then(response => response.json())
+    .then(data => {
+      dispatch({
+        type: settings,
+        payload: data
+      });
     })
     .catch(error => {})
     .finally(done => {});

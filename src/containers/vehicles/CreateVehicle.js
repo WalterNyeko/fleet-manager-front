@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import CreateVehicleComponent from "../../components/vehicles/CreateVehicles";
-
-export default class CreateVehicle extends Component {
+import { fetchSettings } from "../../redux/actions/settings/settings";
+import { connect } from "react-redux";
+class CreateVehicle extends Component {
   state = {
     date: new Date(),
     leaseEndDate: new Date(),
@@ -11,9 +12,24 @@ export default class CreateVehicle extends Component {
     workshopReturnDate: new Date(),
     registrationDate: new Date()
   };
+
+  componentWillMount() {
+    this.props.fetchSettings("vehiclebodytypes");
+    this.props.fetchSettings("vehiclestatus");
+    this.props.fetchSettings("vehicletyres");
+    this.props.fetchSettings("vehiclereturnedworkshop");
+    this.props.fetchSettings("vehiclemakecode");
+    this.props.fetchSettings("vehiclemodelcode");
+    this.props.fetchSettings("vehiclecompanycode");
+    this.props.fetchSettings("vehiclefueltype");
+    this.props.fetchSettings("vehiclecounty");
+    this.props.fetchSettings("vehiclecostcenter");
+    this.props.fetchSettings("vehicleclient");
+    this.props.fetchSettings("vehicleconventiontype");
+  }
   handleDateChange = date => this.setState({ date });
   handleLeaseEndDateChange = date => this.setState({ leaseEndDate: date });
-  handleContractStartDateChange = (date) => {
+  handleContractStartDateChange = date => {
     this.setState({ contractStartDate: date });
   };
   handlePaymentDateChange = date => this.setState({ paymentDate: date });
@@ -33,6 +49,7 @@ export default class CreateVehicle extends Component {
       registrationDate,
       date
     } = this.state;
+    const { mySettings } = this.props;
     return (
       <Fragment>
         <CreateVehicleComponent
@@ -50,8 +67,14 @@ export default class CreateVehicle extends Component {
           workshopReturnDate={workshopReturnDate}
           registrationDate={registrationDate}
           date={date}
+          mySettings={mySettings}
         />
       </Fragment>
     );
   }
 }
+
+const mapStateToProps = state => ({
+  mySettings: state.settingsReducer
+});
+export default connect(mapStateToProps, { fetchSettings })(CreateVehicle);

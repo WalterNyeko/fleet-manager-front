@@ -17,6 +17,7 @@ export default function Settings({
             value={selectedSettingsItem}
             onChange={onChange}
           >
+            <option>Select Settings Item</option>
             {settingsItems &&
               settingsItems.map(({ id, name }) => (
                 <option key={id}>{name}</option>
