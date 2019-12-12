@@ -1,7 +1,12 @@
 import React from "react";
 
 const VehicleSummary = ({
-  mySettings: { vehiclelocationcode, vehiclecountry, vehiclecurrencycodes }
+  mySettings: {
+    vehiclelocationcode,
+    vehiclecountry,
+    vehiclecurrencycodes,
+    vehicleinpull
+  }
 }) => {
   return (
     <div className="row">
@@ -88,13 +93,17 @@ const VehicleSummary = ({
                 </div>
               </div>
               <div className="form-group col-md-4">
-                <label>In pool</label>
+                <label>In Pull</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="pool"></option>
-                    <option value="pool">No</option>
-                    <option value="pool">Yes</option>
-                    <option value="pool">Local Pool Use Only</option>
+                    <option value="inpull" selected>
+                      Select Vehicle In Pull
+                    </option>
+                    {vehicleinpull &&
+                      vehicleinpull.length &&
+                      vehicleinpull.map(({ in_pull_name }) => (
+                        <option value="inpull">{in_pull_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>

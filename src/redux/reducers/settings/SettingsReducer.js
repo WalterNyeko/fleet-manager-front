@@ -13,7 +13,8 @@ const initialState = {
   vehicleconventiontype: [],
   vehiclelocationcode: [],
   vehiclecounty: [],
-  vehiclecurrencycodes: []
+  vehiclecurrencycodes: [],
+  vehicleinpull: []
 };
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -91,8 +92,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         vehiclecurrencycodes: action.payload
-      }; 
-    
+      };
+    case "vehicleinpull":
+      return {
+        ...state,
+        vehicleinpull: action.payload
+      };
+
     default:
       return state;
   }

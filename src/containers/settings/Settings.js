@@ -95,7 +95,14 @@ class Settings extends Component {
         name: "Vehicle Currency Code",
         dbColumn: "currency_codes_name",
         urlTag: "vehiclecurrencycodes"
+      },
+      {
+        id: 16,
+        name: "Vehicle In Pull",
+        dbColumn: "in_pull_name",
+        urlTag: "vehicleinpull"
       }
+      
     ],
     selectedSettingsItem: "",
     settingsValue: ""
