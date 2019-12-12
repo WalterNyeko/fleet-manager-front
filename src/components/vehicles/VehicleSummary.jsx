@@ -1,7 +1,7 @@
 import React from "react";
 
 const VehicleSummary = ({
-  mySettings: { vehiclelocationcode, vehiclecountry }
+  mySettings: { vehiclelocationcode, vehiclecountry, vehiclecurrencycodes }
 }) => {
   return (
     <div className="row">
@@ -76,12 +76,14 @@ const VehicleSummary = ({
                 <label>Currency Codes</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="currency"></option>
-                    <option value="currency">Currency 1</option>
-                    <option value="currency">Currency 2</option>
-                    <option value="currency">Currency 3</option>
-                    <option value="currency">Currency 4</option>
-                    <option value="currency">Currency 5</option>
+                    <option value="currency" selected>
+                      Select Vehicle Currency Code
+                    </option>
+                    {vehiclecurrencycodes &&
+                      vehiclecurrencycodes.length &&
+                      vehiclecurrencycodes.map(({ currency_codes_name }) => (
+                        <option value="currency">{currency_codes_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>

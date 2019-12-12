@@ -89,6 +89,12 @@ class Settings extends Component {
         name: "Vehicle Country",
         dbColumn: "country_name",
         urlTag: "vehiclecountry"
+      },
+      {
+        id: 15,
+        name: "Vehicle Currency Code",
+        dbColumn: "currency_codes_name",
+        urlTag: "vehiclecurrencycodes"
       }
     ],
     selectedSettingsItem: "",
