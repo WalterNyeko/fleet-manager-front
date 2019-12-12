@@ -47,6 +47,12 @@ class Settings extends Component {
         name: "Vehicle Company Code",
         dbColumn: "company_code_name",
         urlTag: "vehiclecompanycode"
+      },
+      {
+        id: 8,
+        name: "Vehicle Fuel Type",
+        dbColumn: "fuel_type_name",
+        urlTag: "vehiclefueltype"
       }
     ],
     selectedSettingsItem: "",

@@ -14,7 +14,8 @@ const CreateVehicle = ({
     vehiclereturnedworkshop,
     vehiclemakecode,
     vehiclemodelcode,
-    vehiclecompanycode
+    vehiclecompanycode,
+    vehiclefueltype
   }
 }) => {
   return (
@@ -177,16 +178,14 @@ const CreateVehicle = ({
                 <label>Fuel Type</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="fuel"></option>
-                    <option value="fuel">Petrol</option>
-                    <option value="fuel">
-                      Compressed Natural Gas @ 2400PSI
+                    <option value="fuel" selected>
+                      Select Fuel Type
                     </option>
-                    <option value="fuel">Diesel</option>
-                    <option value="fuel">Electric</option>
-                    <option value="fuel">Gasoline</option>
-                    <option value="fuel">Hybrid</option>
-                    <option value="fuel">LPG</option>
+                    {vehiclefueltype &&
+                      vehiclefueltype.length &&
+                      vehiclefueltype.map(({ fuel_type_name }) => (
+                        <option value="fuel">{fuel_type_name}</option>
+                      ))}
                   </select>
                 </div>
               </div>
