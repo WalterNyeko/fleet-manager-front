@@ -101,8 +101,13 @@ class Settings extends Component {
         name: "Vehicle In Pull",
         dbColumn: "in_pull_name",
         urlTag: "vehicleinpull"
+      },
+      {
+        id: 17,
+        name: "Vehicle Gear Box",
+        dbColumn: "gear_box_name",
+        urlTag: "vehiclegearbox"
       }
-      
     ],
     selectedSettingsItem: "",
     settingsValue: ""
