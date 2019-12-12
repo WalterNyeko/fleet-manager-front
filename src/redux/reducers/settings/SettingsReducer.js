@@ -6,7 +6,8 @@ const initialState = {
   vehiclemakecode: [],
   vehiclemodelcode: [],
   vehiclecompanycode: [],
-  vehiclefueltype: []
+  vehiclefueltype: [],
+  vehiclecountry: []
 };
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -49,6 +50,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         vehiclefueltype: action.payload
+      };
+    case "vehiclecounty":
+      return {
+        ...state,
+        vehiclecounty: action.payload
       };
     default:
       return state;

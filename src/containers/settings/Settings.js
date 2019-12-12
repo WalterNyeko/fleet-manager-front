@@ -53,6 +53,12 @@ class Settings extends Component {
         name: "Vehicle Fuel Type",
         dbColumn: "fuel_type_name",
         urlTag: "vehiclefueltype"
+      },
+      {
+        id: 9,
+        name: "Vehicle County",
+        dbColumn: "county_name",
+        urlTag: "vehiclecounty"
       }
     ],
     selectedSettingsItem: "",
