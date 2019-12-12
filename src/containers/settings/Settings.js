@@ -71,6 +71,13 @@ class Settings extends Component {
         name: "Vehicle Client",
         dbColumn: "client_name",
         urlTag: "vehicleclient"
+      },
+
+      {
+        id: 12,
+        name: "Vehicle Convention Type",
+        dbColumn: "convention_type_name",
+        urlTag: "vehicleconventiontype"
       }
     ],
     selectedSettingsItem: "",

@@ -18,7 +18,8 @@ const CreateVehicle = ({
     vehiclefueltype,
     vehiclecounty,
     vehiclecostcenter,
-    vehicleclient
+    vehicleclient,
+    vehicleconventiontype
   }
 }) => {
   return (
@@ -263,24 +264,16 @@ const CreateVehicle = ({
                 <label>Conversion Type</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option value="conversion"></option>
-                    <option value="conversion">
-                      Fibre Body & rollcage with canvas
+                    <option value="conversion" selected>
+                      Select Vehicle Conversion Type
                     </option>
-                    <option value="conversion">
-                      Superstructure with canvas
-                    </option>
-                    <option value="conversion">
-                      High sided boy SS & canvas
-                    </option>
-                    <option value="conversion">
-                      Low sided body SS W/bench seat & canvas
-                    </option>
-                    <option value="conversion">Rear Metallic Body</option>
-                    <option value="conversion">
-                      Simple structure with Canvas
-                    </option>
-                    <option value="conversion">Caravan</option>
+                    {vehicleconventiontype &&
+                      vehicleconventiontype.length &&
+                      vehicleconventiontype.map(({ convention_type_name }) => (
+                        <option value="conversion">
+                          {convention_type_name}
+                        </option>
+                      ))}
                   </select>
                 </div>
               </div>
