@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function VehicleSummary() {
+const VehicleSummary = ({ mySettings: { vehiclelocationcode } }) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -21,12 +21,14 @@ export default function VehicleSummary() {
               <div className="form-group col-md-4">
                 <label>Location Code</label>
                 <select className="browser-default custom-select">
-                  <option selected></option>
-                  <option value="location">Location Code 1</option>
-                  <option value="location">Location Code 2</option>
-                  <option value="location">Location Code 3</option>
-                  <option value="location">Location Code 4</option>
-                  <option value="location">Location Code 5</option>
+                  <option value="location" selected>
+                    Select Vehicle Location Code
+                  </option>
+                  {vehiclelocationcode &&
+                    vehiclelocationcode.length &&
+                    vehiclelocationcode.map(({ location_code_name }) => (
+                      <option value="location">{location_code_name}</option>
+                    ))}
                 </select>
               </div>
               <div className="form-group col-md-4">
@@ -172,4 +174,5 @@ export default function VehicleSummary() {
       </form>
     </div>
   );
-}
+};
+export default VehicleSummary;

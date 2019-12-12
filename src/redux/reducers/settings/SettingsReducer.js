@@ -10,7 +10,8 @@ const initialState = {
   vehiclecountry: [],
   vehiclecostcenter: [],
   vehicleclient: [],
-  vehicleconventiontype: []
+  vehicleconventiontype: [],
+  vehiclelocationcode: []
 };
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -74,6 +75,12 @@ export default (state = initialState, action) => {
         ...state,
         vehicleconventiontype: action.payload
       };
+    case "vehiclelocationcode":
+      return {
+        ...state,
+        vehiclelocationcode: action.payload
+      };
+
     default:
       return state;
   }
