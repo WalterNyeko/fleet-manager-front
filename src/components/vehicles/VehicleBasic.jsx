@@ -1,6 +1,8 @@
 import React from "react";
 
-const VehicleBasic = ({ mySettings: { vehiclegearbox } }) => {
+const VehicleBasic = ({
+  mySettings: { vehiclegearbox, vehicledeductability }
+}) => {
   return (
     <div className="row">
       <form className="row" action="#">
@@ -141,15 +143,16 @@ const VehicleBasic = ({ mySettings: { vehiclegearbox } }) => {
                 <label>CO2 Deducability</label>
                 <div>
                   <select className="browser-default custom-select">
-                    <option selected></option>
-                    <option value="country">50%</option>
-                    <option value="country">60%</option>
-                    <option value="country">70%</option>
-                    <option value="country">75%</option>
-                    <option value="country">80%</option>
-                    <option value="country">90%</option>
-                    <option value="country">100%</option>
-                    <option value="country">120%</option>
+                    <option value="deducability" selected>
+                      Select Vehicle Deducability
+                    </option>
+                    {vehicledeductability &&
+                      vehicledeductability.length &&
+                      vehicledeductability.map(({ deductability_name }) => (
+                        <option value="deducability">
+                          {deductability_name}
+                        </option>
+                      ))}
                   </select>
                 </div>
               </div>

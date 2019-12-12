@@ -107,7 +107,15 @@ class Settings extends Component {
         name: "Vehicle Gear Box",
         dbColumn: "gear_box_name",
         urlTag: "vehiclegearbox"
+      },
+      {
+        id: 18,
+        name: "Vehicle Deducability",
+        dbColumn: "deductability_name",
+        urlTag: "vehicledeductability"
       }
+
+      
     ],
     selectedSettingsItem: "",
     settingsValue: ""
