@@ -38,3 +38,8 @@
 .my-card {
   border: 1px solid #ced4da;
 }
+.graphs {
+  max-width: 80% !important;
+  margin-top: 50px !important;
+  margin-left: 250px !important;
+}
