@@ -37,7 +37,26 @@ class CreateVehicle extends Component {
     costperkm: "",
     totalCost: "",
     numberOfTyres: "",
-    cumilativeBalance: ""
+    cumilativeBalance: "",
+    exteriorColor: "",
+    gearBox: "",
+    ecoScore: "",
+    interiorColor: "",
+    numberOfDoors: "",
+    cogkm: "",
+    keyNumber: "",
+    chassisNumber: "",
+    fiscalHp: "",
+    engineNumber: "",
+    engineCc: "",
+    distanceHomeToWork: "",
+    vehiclePhoneNumber: "",
+    bhp: "",
+    deducability: "",
+    grossVehicleWeight: "",
+    winterTyres: '',
+    winterTyresLocation: '',
+    tankSize: ''
   };
 
   componentWillMount() {
