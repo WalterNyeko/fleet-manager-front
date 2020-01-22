@@ -25,7 +25,19 @@ class CreateVehicle extends Component {
     costcenter: "",
     year: "",
     client: "",
-    conversion: ""
+    conversion: "",
+    estimatedOdometer: "",
+    locationCode: "",
+    vehicleCountry: "",
+    nextService: "",
+    nextInspection: "",
+    currencyCodes: "",
+    inPull: "",
+    lperkm: "",
+    costperkm: "",
+    totalCost: "",
+    numberOfTyres: "",
+    cumilativeBalance: ""
   };
 
   componentWillMount() {

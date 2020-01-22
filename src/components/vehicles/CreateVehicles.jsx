@@ -191,29 +191,57 @@ export default function CreateVehicles({
                     />
                   </div>
                   <div class='tab-pane p-3' id='summary-1' role='tabpanel'>
-                    <VehicleSummaryComponent mySettings={mySettings} />
+                    <VehicleSummaryComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='basic-1' role='tabpanel'>
-                    <VehicleBasicComponent mySettings={mySettings} />
+                    <VehicleBasicComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='diary-1' role='tabpanel'>
-                    <VehicleDiaryComponent mySettings={mySettings} />
+                    <VehicleDiaryComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='repairs-1' role='tabpanel'>
-                    <AddAccidentComponent mySettings={mySettings} />
+                    <AddAccidentComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='allocation-1' role='tabpanel'>
-                    <VehicleAllocationComponent mySettings={mySettings} />
+                    <VehicleAllocationComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='assets-1' role='tabpanel'>
-                    <VehicleAssetComponent mySettings={mySettings} />
+                    <VehicleAssetComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div
                     class='tab-pane p-3'
                     id='majorcomponents-1'
                     role='tabpanel'
                   >
-                    <MajorComponent mySettings={mySettings} />
+                    <MajorComponent
+                      mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
+                    />
                   </div>
                   <div class='tab-pane p-3' id='lease-1' role='tabpanel'>
                     <LeaseComponent
@@ -228,6 +256,8 @@ export default function CreateVehicles({
                       paymentDate={paymentDate}
                       releaseDate={releaseDate}
                       mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
                     />
                   </div>
                   <div class='tab-pane p-3' id='notes-1' role='tabpanel'>
@@ -235,6 +265,8 @@ export default function CreateVehicles({
                       handleDateChange={handleDateChange}
                       date={date}
                       mySettings={mySettings}
+                      handleInputChange={handleInputChange}
+                      state={state}
                     />
                   </div>
                 </div>
