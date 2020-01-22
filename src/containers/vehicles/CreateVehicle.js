@@ -10,7 +10,22 @@ class CreateVehicle extends Component {
     paymentDate: new Date(),
     releaseDate: new Date(),
     workshopReturnDate: new Date(),
-    registrationDate: new Date()
+    registrationDate: new Date(),
+    registrationNumber: "",
+    vehicleType: "",
+    fleetNumber: "",
+    extraRegistrationNumber: "",
+    vehicleStatus: "",
+    bodyType: "",
+    makeCode: "",
+    modelCode: "",
+    companyCode: "",
+    fuelType: "",
+    vehicleCounty: "",
+    costcenter: "",
+    year: "",
+    client: "",
+    conversion: ""
   };
 
   componentWillMount() {
@@ -46,6 +61,11 @@ class CreateVehicle extends Component {
   handleRegistrationDateChange = date =>
     this.setState({ registrationDate: date });
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     const {
       leaseEndDate,
@@ -75,6 +95,8 @@ class CreateVehicle extends Component {
           registrationDate={registrationDate}
           date={date}
           mySettings={mySettings}
+          handleInputChange={this.handleInputChange}
+          state={this.state}
         />
       </Fragment>
     );
