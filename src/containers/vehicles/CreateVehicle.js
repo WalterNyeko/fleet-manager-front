@@ -10,7 +10,81 @@ class CreateVehicle extends Component {
     paymentDate: new Date(),
     releaseDate: new Date(),
     workshopReturnDate: new Date(),
-    registrationDate: new Date()
+    registrationDate: new Date(),
+    registrationNumber: "",
+    vehicleType: "",
+    fleetNumber: "",
+    extraRegistrationNumber: "",
+    vehicleStatus: "",
+    bodyType: "",
+    makeCode: "",
+    modelCode: "",
+    companyCode: "",
+    fuelType: "",
+    vehicleCounty: "",
+    costcenter: "",
+    year: "",
+    client: "",
+    conversion: "",
+    estimatedOdometer: "",
+    locationCode: "",
+    vehicleCountry: "",
+    nextService: "",
+    nextInspection: "",
+    currencyCodes: "",
+    inPull: "",
+    lperkm: "",
+    costperkm: "",
+    totalCost: "",
+    numberOfTyres: "",
+    cumilativeBalance: "",
+    exteriorColor: "",
+    gearBox: "",
+    ecoScore: "",
+    interiorColor: "",
+    numberOfDoors: "",
+    cogkm: "",
+    keyNumber: "",
+    chassisNumber: "",
+    fiscalHp: "",
+    engineNumber: "",
+    engineCc: "",
+    distanceHomeToWork: "",
+    vehiclePhoneNumber: "",
+    bhp: "",
+    deducability: "",
+    grossVehicleWeight: "",
+    winterTyres: "",
+    winterTyresLocation: "",
+    tankSize: "",
+    waranty: "",
+    warantyDistance: "",
+    insuranceCompany: "",
+    insuranceExpiry: "",
+    insuranceCommencement: "",
+    insuranceCertificate: "",
+    motorInsurancePolicy: "",
+    midOn: "",
+    midOff: "",
+    serviceDate: "",
+    lastServiceDate: "",
+    serviceSchedule: "",
+    serviceIntervalWeeks: "",
+    serviceIntervalKms: "",
+    inspectionDate: "",
+    inspectionType: "",
+    inspectionIntervalDistance: "",
+    inspectionCertificate: "",
+    odometer: "",
+    currentOdoDate: "",
+    distancePerYear: "",
+    distancePerDay: "",
+    deviationperc: "",
+    deviation: "",
+    ageDays: "",
+    ageYears: "",
+    InspectionIntervalWeeks: "",
+    lastServiceType: ''
   };
 
   componentWillMount() {
@@ -46,6 +120,12 @@ class CreateVehicle extends Component {
   handleRegistrationDateChange = date =>
     this.setState({ registrationDate: date });
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+    console.log(this.state);
+  };
+
   render() {
     const {
       leaseEndDate,
@@ -75,6 +155,8 @@ class CreateVehicle extends Component {
           registrationDate={registrationDate}
           date={date}
           mySettings={mySettings}
+          handleInputChange={this.handleInputChange}
+          state={this.state}
         />
       </Fragment>
     );
