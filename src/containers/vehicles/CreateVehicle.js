@@ -54,9 +54,37 @@ class CreateVehicle extends Component {
     bhp: "",
     deducability: "",
     grossVehicleWeight: "",
-    winterTyres: '',
-    winterTyresLocation: '',
-    tankSize: ''
+    winterTyres: "",
+    winterTyresLocation: "",
+    tankSize: "",
+    waranty: "",
+    warantyDistance: "",
+    insuranceCompany: "",
+    insuranceExpiry: "",
+    insuranceCommencement: "",
+    insuranceCertificate: "",
+    motorInsurancePolicy: "",
+    midOn: "",
+    midOff: "",
+    serviceDate: "",
+    lastServiceDate: "",
+    serviceSchedule: "",
+    serviceIntervalWeeks: "",
+    serviceIntervalKms: "",
+    inspectionDate: "",
+    inspectionType: "",
+    inspectionIntervalDistance: "",
+    inspectionCertificate: "",
+    odometer: "",
+    currentOdoDate: "",
+    distancePerYear: "",
+    distancePerDay: "",
+    deviationperc: "",
+    deviation: "",
+    ageDays: "",
+    ageYears: "",
+    InspectionIntervalWeeks: "",
+    lastServiceType: ''
   };
 
   componentWillMount() {
@@ -95,6 +123,7 @@ class CreateVehicle extends Component {
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
+    console.log(this.state);
   };
 
   render() {
