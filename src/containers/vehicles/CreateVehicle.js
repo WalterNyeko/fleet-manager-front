@@ -94,7 +94,14 @@ class CreateVehicle extends Component {
     allocationEndOdometer: "",
     allocationLock: "",
     allocationWorkshop: "",
-    allocationReason:''
+    allocationReason: '',
+    assetDescription: '',
+    assetType: '',
+    assetMake: '',
+    assetModel: '',
+    assetIssueDate: '',
+    assetRetuenDate: '',
+    assetSerial: ''
   };
 
   componentWillMount() {
