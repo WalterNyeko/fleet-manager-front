@@ -84,7 +84,17 @@ class CreateVehicle extends Component {
     ageDays: "",
     ageYears: "",
     InspectionIntervalWeeks: "",
-    lastServiceType: ''
+    lastServiceType: "",
+    driverName: "",
+    changedBy: "",
+    allocationDate: "",
+    allocationStartDate: "",
+    allocationOdometer: "",
+    allocationEndDate: "",
+    allocationEndOdometer: "",
+    allocationLock: "",
+    allocationWorkshop: "",
+    allocationReason:''
   };
 
   componentWillMount() {
