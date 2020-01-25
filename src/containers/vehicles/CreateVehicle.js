@@ -93,7 +93,17 @@ class CreateVehicle extends Component {
     lastServiceType: "",
     registrationNumberSummary: "",
     nextServiceDate: new Date(),
-    nextInspectionDate: new Date()
+    nextInspectionDate: new Date(),
+    driverName: "",
+    changedBy: "",
+    allocationDate: "",
+    allocationStartDate: "",
+    allocationOdometer: "",
+    allocationEndDate: "",
+    allocationEndOdometer: "",
+    allocationLock: "",
+    allocationWorkshop: "",
+    allocationReason:''
   };
 
   componentWillMount() {
