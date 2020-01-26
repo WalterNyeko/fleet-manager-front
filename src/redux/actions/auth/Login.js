@@ -5,6 +5,7 @@ import {
   showSuccessNotification
 } from "../../../helpers/index";
 export const signIn = userInfo => dispatch => {
+  console.log(userInfo);
   const url = `${baseURL}auth/login/`;
   fetch(url, {
     method: "POST",
@@ -20,6 +21,7 @@ export const signIn = userInfo => dispatch => {
         localStorage.setItem("fm-token", data.token);
         history.push("/home");
       } else {
+        console.log(data);
         showErrorNotification("Login Failed");
       }
     })

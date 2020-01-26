@@ -1,7 +1,11 @@
 import React, { Component, Fragment } from "react";
 import CreateVehicleComponent from "../../components/vehicles/CreateVehicles";
 import { fetchSettings } from "../../redux/actions/settings/settings";
+import { addVehicle } from "../../redux/actions/vehicles/AddVehicle";
+import { addVehicleSummary } from "../../redux/actions/vehicles/AddVehicleSummary";
 import { connect } from "react-redux";
+import { fetchVehicles } from "../../redux/actions/vehicles/FetchVehicles";
+
 class CreateVehicle extends Component {
   state = {
     date: new Date(),
@@ -15,8 +19,10 @@ class CreateVehicle extends Component {
     vehicleType: "",
     fleetNumber: "",
     extraRegistrationNumber: "",
+    vehicleTyre: "",
     vehicleStatus: "",
     bodyType: "",
+    returnedToWorkshop: "",
     makeCode: "",
     modelCode: "",
     companyCode: "",
@@ -84,7 +90,10 @@ class CreateVehicle extends Component {
     ageDays: "",
     ageYears: "",
     InspectionIntervalWeeks: "",
-    lastServiceType: ''
+    lastServiceType: "",
+    registrationNumberSummary: "",
+    nextServiceDate: new Date(),
+    nextInspectionDate: new Date()
   };
 
   componentWillMount() {
@@ -107,6 +116,7 @@ class CreateVehicle extends Component {
     this.props.fetchSettings("vehiclegearbox");
     this.props.fetchSettings("vehicledeductability");
     this.props.fetchSettings("vehicleinsurancecompany");
+    this.props.fetchVehicles();
   }
   handleDateChange = date => this.setState({ date });
   handleLeaseEndDateChange = date => this.setState({ leaseEndDate: date });
@@ -119,11 +129,62 @@ class CreateVehicle extends Component {
     this.setState({ workshopReturnDate: date });
   handleRegistrationDateChange = date =>
     this.setState({ registrationDate: date });
+  handleServiceDateChange = date => this.setState({ nextServiceDate: date });
+  handleInspectionDateChange = date =>
+    this.setState({ nextInspectionDate: date });
 
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
     console.log(this.state);
+  };
+
+  handleAddVehicle = event => {
+    event.preventDefault();
+    const data = {
+      registration_no: this.state.registrationNumber,
+      extra_registration_no: this.state.extraRegistrationNumber,
+      year: this.state.year,
+      fleet_number: this.state.fleetNumber,
+      date_registered: this.state.registrationDate,
+      date_returned_to_workshop: this.state.workshopReturnDate,
+      vehicle_tyre: parseInt(this.state.vehicleTyre),
+      vehicle_body_type: parseInt(this.state.bodyType),
+      vehicle_client: parseInt(this.state.client),
+      vehicle_company_code: parseInt(this.state.companyCode),
+      vehicle_convention_type: parseInt(this.state.conversion),
+      vehicle_cost_center: parseInt(this.state.costcenter),
+      vehicle_fuel_type: parseInt(this.state.fuelType),
+      vehicle_make_code: parseInt(this.state.makeCode),
+      vehicle_model_code: parseInt(this.state.modelCode),
+      vehicle_returned_workshop: parseInt(this.state.returnedToWorkshop),
+      vehicle_status: parseInt(this.state.vehicleStatus),
+      vehicle_county: parseInt(this.state.vehicleCounty),
+      vehicle_location_code: parseInt(this.state.locationCode)
+    };
+    const { addVehicle } = this.props;
+    addVehicle(data);
+  };
+
+  handleAddVehicleSummary = event => {
+    event.preventDefault();
+    const data = {
+      registration_no: this.state.registrationNumberSummary,
+      estimated_odometer: this.state.estimatedOdometer,
+      next_service: this.state.nextServiceDate,
+      next_inspection: this.state.nextInspectionDate,
+      vehicle_country: parseInt(this.state.vehicleCountry),
+      vehicle_currency_codes: parseInt(this.state.currencyCodes),
+      in_pull_name: parseInt(this.state.inPull),
+      l_per_km: parseInt(this.state.lperkm),
+      cost_per_km: parseInt(this.state.costperkm),
+      total_cost: parseInt(this.state.totalCost),
+      number_of_remining_tyres: parseInt(this.state.numberOfTyres),
+      cumilative_balance: parseInt(this.state.cumilativeBalance),
+      vehicle_id: parseInt(this.state.registrationNumberSummary)
+    };
+    const { addVehicleSummary } = this.props;
+    addVehicleSummary(data);
   };
 
   render() {
@@ -157,6 +218,11 @@ class CreateVehicle extends Component {
           mySettings={mySettings}
           handleInputChange={this.handleInputChange}
           state={this.state}
+          handleAddVehicle={this.handleAddVehicle}
+          handleInspectionDateChange={this.handleInspectionDateChange}
+          handleServiceDateChange={this.handleServiceDateChange}
+          vehicles={this.props.vehicles.vehicles}
+          handleAddVehicleSummary={this.handleAddVehicleSummary}
         />
       </Fragment>
     );
@@ -164,6 +230,13 @@ class CreateVehicle extends Component {
 }
 
 const mapStateToProps = state => ({
-  mySettings: state.settingsReducer
+  mySettings: state.settingsReducer,
+  addVehicle: state.vehicleReducer,
+  vehicles: state.vehicleReducer
 });
-export default connect(mapStateToProps, { fetchSettings })(CreateVehicle);
+export default connect(mapStateToProps, {
+  fetchSettings,
+  addVehicle,
+  addVehicleSummary,
+  fetchVehicles
+})(CreateVehicle);
