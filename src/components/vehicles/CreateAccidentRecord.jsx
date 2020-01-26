@@ -15,215 +15,215 @@ import VehicleAccidentsComponent from "../accidents/AccidentRecord";
 
 export default function AccidentRecord() {
   return (
-    <div class="col-lg-12">
-      <div class="card">
-        <div class="card-body">
-          <ul class="nav nav-tabs nav-justified" role="tablist">
-            <li class="nav-item waves-effect waves-light">
+    <div class='col-lg-12'>
+      <div class='card'>
+        <div class='card-body'>
+          <ul class='nav nav-tabs nav-justified' role='tablist'>
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link active"
-                data-toggle="tab"
-                href="#default"
-                role="tab"
+                class='nav-link active'
+                data-toggle='tab'
+                href='#default'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="fas fa-home"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='fas fa-home'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Default</span>
+                <span class='d-none d-sm-block'>Default</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#description-1"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#description-1'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Description</span>
+                <span class='d-none d-sm-block'>Description</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
-              <a class="nav-link" data-toggle="tab" href="#cost-1" role="tab">
-                <span class="d-block d-sm-none">
-                  <i class="far fa-envelope"></i>
+            <li class='nav-item waves-effect waves-light'>
+              <a class='nav-link' data-toggle='tab' href='#cost-1' role='tab'>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-envelope'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Estimated Cost</span>
+                <span class='d-none d-sm-block'>Estimated Cost</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#invoice-1"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#invoice-1'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="fas fa-cog"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='fas fa-cog'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Invoice Details</span>
+                <span class='d-none d-sm-block'>Invoice Details</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#service-1"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#service-1'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Service History</span>
+                <span class='d-none d-sm-block'>Service History</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#repairrecords"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#repairrecords'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Repair Records</span>
+                <span class='d-none d-sm-block'>Repair Records</span>
               </a>
             </li>
           </ul>
-          <div class="tab-content">
-            <div class="tab-pane active p-3" id="default" role="tabpanel">
+          <div class='tab-content'>
+            <div class='tab-pane active p-3' id='default' role='tabpanel'>
               <RepairInfoComponent />
             </div>
-            <div class="tab-pane p-3" id="description-1" role="tabpanel">
+            <div class='tab-pane p-3' id='description-1' role='tabpanel'>
               <RepairDescriptionComponent />
             </div>
-            <div class="tab-pane p-3" id="cost-1" role="tabpanel">
+            <div class='tab-pane p-3' id='cost-1' role='tabpanel'>
               <RepairCostComponent />
             </div>
-            <div class="tab-pane p-3" id="invoice-1" role="tabpanel">
+            <div class='tab-pane p-3' id='invoice-1' role='tabpanel'>
               <RepairInvoiceComponent />
             </div>
-            <div class="tab-pane p-3" id="service-1" role="tabpanel">
+            <div class='tab-pane p-3' id='service-1' role='tabpanel'>
               <RepairHistoryComponent />
             </div>
-            <div class="tab-pane p-3" id="repairrecords" role="tabpanel">
+            <div class='tab-pane p-3' id='repairrecords' role='tabpanel'>
               <VehicleRepairsComponent />
             </div>
           </div>
         </div>
 
-        <div class="card-body">
-          <ul class="nav nav-tabs nav-justified" role="tablist">
-            <li class="nav-item waves-effect waves-light">
+        <div class='card-body'>
+          <ul class='nav nav-tabs nav-justified' role='tablist'>
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link active"
-                data-toggle="tab"
-                href="#accidentinfo"
-                role="tab"
+                class='nav-link active'
+                data-toggle='tab'
+                href='#accidentinfo'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="fas fa-home"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='fas fa-home'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Default</span>
+                <span class='d-none d-sm-block'>Default</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
-              <a class="nav-link" data-toggle="tab" href="#goahead" role="tab">
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+            <li class='nav-item waves-effect waves-light'>
+              <a class='nav-link' data-toggle='tab' href='#goahead' role='tab'>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Description</span>
+                <span class='d-none d-sm-block'>Description</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#accidentbasic"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#accidentbasic'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-envelope"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-envelope'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Basic</span>
+                <span class='d-none d-sm-block'>Basic</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#accidentdetails"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#accidentdetails'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="fas fa-cog"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='fas fa-cog'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Details</span>
+                <span class='d-none d-sm-block'>Details</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#accidentvor"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#accidentvor'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">VOR</span>
+                <span class='d-none d-sm-block'>VOR</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#accidentcosts"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#accidentcosts'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Costs</span>
+                <span class='d-none d-sm-block'>Costs</span>
               </a>
             </li>
-            <li class="nav-item waves-effect waves-light">
+            <li class='nav-item waves-effect waves-light'>
               <a
-                class="nav-link"
-                data-toggle="tab"
-                href="#accidentrecords"
-                role="tab"
+                class='nav-link'
+                data-toggle='tab'
+                href='#accidentrecords'
+                role='tab'
               >
-                <span class="d-block d-sm-none">
-                  <i class="far fa-user"></i>
+                <span class='d-block d-sm-none'>
+                  <i class='far fa-user'></i>
                 </span>{" "}
-                <span class="d-none d-sm-block">Accident Records</span>
+                <span class='d-none d-sm-block'>Accident Records</span>
               </a>
             </li>
           </ul>
-          <div class="tab-content">
-            <div class="tab-pane active p-3" id="accidentinfo" role="tabpanel">
+          <div class='tab-content'>
+            <div class='tab-pane active p-3' id='accidentinfo' role='tabpanel'>
               <AccidentInfoComponent />
             </div>
-            <div class="tab-pane p-3" id="goahead" role="tabpanel">
+            <div class='tab-pane p-3' id='goahead' role='tabpanel'>
               <AccidentDescriptionComponent />
             </div>
-            <div class="tab-pane p-3" id="accidentbasic" role="tabpanel">
+            <div class='tab-pane p-3' id='accidentbasic' role='tabpanel'>
               <AccidentBasicComponent />
             </div>
-            <div class="tab-pane p-3" id="accidentdetails" role="tabpanel">
+            <div class='tab-pane p-3' id='accidentdetails' role='tabpanel'>
               <AccidentDetailsComponent />
             </div>
-            <div class="tab-pane p-3" id="accidentvor" role="tabpanel">
+            <div class='tab-pane p-3' id='accidentvor' role='tabpanel'>
               <AccidentVorComponent />
             </div>
-            <div class="tab-pane p-3" id="accidentcosts" role="tabpanel">
+            <div class='tab-pane p-3' id='accidentcosts' role='tabpanel'>
               <AccidentCostComponent />
             </div>
-            <div class="tab-pane p-3" id="accidentrecords" role="tabpanel">
+            <div class='tab-pane p-3' id='accidentrecords' role='tabpanel'>
               <VehicleAccidentsComponent />
             </div>
           </div>
