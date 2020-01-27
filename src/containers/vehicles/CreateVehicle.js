@@ -155,7 +155,9 @@ class CreateVehicle extends Component {
     contractDuration: "",
     contractDistance: "",
     contractOptionCode: "",
-    excessCharge: ''
+    excessCharge: "",
+    contractBaloonPayment: "",
+    notes: ""
   };
 
   componentWillMount() {

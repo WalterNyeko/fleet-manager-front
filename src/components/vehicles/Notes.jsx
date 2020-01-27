@@ -2,7 +2,12 @@ import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function Notes({ handleDateChange, date }) {
+export default function Notes({
+  handleDateChange,
+  date,
+  handleInputChange,
+  contractBaloonPayment, notes
+}) {
   return (
     <div className='row'>
       <form className='row' action='#'>
@@ -24,6 +29,9 @@ export default function Notes({ handleDateChange, date }) {
                   className='form-control'
                   required
                   placeholder=''
+                  name='contractBaloonPayment'
+                  value={contractBaloonPayment}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className='form-group col-md-3'>
@@ -33,6 +41,9 @@ export default function Notes({ handleDateChange, date }) {
                   className='form-control'
                   required
                   placeholder=''
+                  name='notes'
+                  value={notes}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className='form-group col-md-3 mb-0'>
